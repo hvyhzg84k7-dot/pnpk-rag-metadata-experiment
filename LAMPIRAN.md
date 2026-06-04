@@ -85,7 +85,7 @@ Kolom `comparison_*` ditentukan dari nilai $\Delta_i(m)$:
 Indikator keterlacakan sumber tidak dihitung oleh RAGAS, tetapi dihitung terpisah sesuai metode Bab 3. Setiap indikator bernilai 1 jika minimal satu dari lima konteks teratas memiliki metadata yang cocok dengan rujukan dataset, dan bernilai 0 jika tidak cocok atau metadata tidak tersedia.
 
 $$
-\text{traceability\_mean}(\text{indicator}, p) =
+\mathrm{traceability\_mean}(\text{indicator}, p) =
 \frac{\sum_{i=1}^{N} \text{match}(i, \text{indicator}, p)}{N}
 $$
 
@@ -136,19 +136,19 @@ Bagian ini menunjukkan bagaimana angka pada CSV masuk ke rumus pada bagian sebel
 Untuk `context_relevance` pada baseline:
 
 $$
-\bar{s}(\text{context\_relevance}, \text{baseline}) = \frac{46.00}{50} = 0.9200
+\bar{s}(\mathrm{context\_relevance}, \text{baseline}) = \frac{46.00}{50} = 0.9200
 $$
 
 Untuk `context_relevance` pada metadata:
 
 $$
-\bar{s}(\text{context\_relevance}, \text{metadata}) = \frac{49.00}{50} = 0.9800
+\bar{s}(\mathrm{context\_relevance}, \text{metadata}) = \frac{49.00}{50} = 0.9800
 $$
 
 Sehingga delta metrik tersebut adalah:
 
 $$
-\Delta(\text{context\_relevance}) = 0.9800 - 0.9200 = 0.0600
+\Delta(\mathrm{context\_relevance}) = 0.9800 - 0.9200 = 0.0600
 $$
 
 Untuk `faithfulness`:
@@ -165,9 +165,9 @@ Untuk `answer_relevance`:
 
 $$
 \begin{aligned}
-\bar{s}(\text{answer\_relevance}, \text{baseline}) &= \frac{41.7709470526}{50} = 0.8354189411 \\[4pt]
-\bar{s}(\text{answer\_relevance}, \text{metadata}) &= \frac{42.7672762990}{50} = 0.8553455260 \\[4pt]
-\Delta(\text{answer\_relevance}) &= 0.8553455260 - 0.8354189411 = 0.0199265849
+\bar{s}(\mathrm{answer\_relevance}, \text{baseline}) &= \frac{41.7709470526}{50} = 0.8354189411 \\[4pt]
+\bar{s}(\mathrm{answer\_relevance}, \text{metadata}) &= \frac{42.7672762990}{50} = 0.8553455260 \\[4pt]
+\Delta(\mathrm{answer\_relevance}) &= 0.8553455260 - 0.8354189411 = 0.0199265849
 \end{aligned}
 $$
 
@@ -176,7 +176,7 @@ $$
 Untuk Q03 pada `answer_relevance`:
 
 $$
-\Delta_3(\text{answer\_relevance}) = 0.7994447183 - 0.8947299409 = -0.0952852226
+\Delta_3(\mathrm{answer\_relevance}) = 0.7994447183 - 0.8947299409 = -0.0952852226
 $$
 
 Nilai negatif ini menyebabkan `comparison_answer_relevance` bernilai `metadata_lower`.
@@ -186,16 +186,16 @@ Nilai negatif ini menyebabkan `comparison_answer_relevance` bernilai `metadata_l
 Untuk `page_match` pada metadata:
 
 $$
-\text{traceability\_mean}(\text{page\_match}, \text{metadata}) = \frac{48}{50} = 0.9600
+\mathrm{traceability\_mean}(\mathrm{page\_match}, \text{metadata}) = \frac{48}{50} = 0.9600
 $$
 
 Untuk indikator lain:
 
 $$
 \begin{aligned}
-\text{traceability\_mean}(\text{chapter\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000 \\[4pt]
-\text{traceability\_mean}(\text{section\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000 \\[4pt]
-\text{traceability\_mean}(\text{label\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000
+\mathrm{traceability\_mean}(\mathrm{chapter\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000 \\[4pt]
+\mathrm{traceability\_mean}(\mathrm{section\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000 \\[4pt]
+\mathrm{traceability\_mean}(\mathrm{label\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000
 \end{aligned}
 $$
 
