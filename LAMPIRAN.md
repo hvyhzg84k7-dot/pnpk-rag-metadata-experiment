@@ -127,6 +127,74 @@ label_match:   baseline=0/50, metadata=50/50
 
 Pada metrik keterlacakan, metadata_filter_used muncul pada 50 dari 50 pertanyaan, sedangkan metadata_filter_fallback_used bernilai 0 dari 50 pertanyaan. Ini menunjukkan filter metadata aktif pada seluruh evaluasi dan tidak perlu fallback.
 
+## Contoh Substitusi Angka ke Rumus
+
+Bagian ini menunjukkan bagaimana angka pada CSV masuk ke rumus pada bagian sebelumnya.
+
+### RAGAS
+
+Untuk `context_relevance` pada baseline:
+
+```text
+s_bar(context_relevance, baseline) = 46.00 / 50 = 0.9200
+```
+
+Untuk `context_relevance` pada metadata:
+
+```text
+s_bar(context_relevance, metadata) = 49.00 / 50 = 0.9800
+```
+
+Sehingga delta metrik tersebut adalah:
+
+```text
+delta(context_relevance) = 0.9800 - 0.9200 = 0.0600
+```
+
+Untuk `faithfulness`:
+
+```text
+s_bar(faithfulness, baseline) = 44.3073870573 / 50 = 0.8861477411
+s_bar(faithfulness, metadata) = 48.3095238094 / 50 = 0.9661904762
+delta(faithfulness) = 0.9661904762 - 0.8861477411 = 0.0800427351
+```
+
+Untuk `answer_relevance`:
+
+```text
+s_bar(answer_relevance, baseline) = 41.7709470526 / 50 = 0.8354189411
+s_bar(answer_relevance, metadata) = 42.7672762990 / 50 = 0.8553455260
+delta(answer_relevance) = 0.8553455260 - 0.8354189411 = 0.0199265849
+```
+
+### Per Pertanyaan
+
+Untuk Q03 pada `answer_relevance`:
+
+```text
+delta_3(answer_relevance) = 0.7994447183 - 0.8947299409 = -0.0952852226
+```
+
+Nilai negatif ini menyebabkan `comparison_answer_relevance` bernilai `metadata_lower`.
+
+### Traceability
+
+Untuk `page_match` pada metadata:
+
+```text
+traceability_mean(page_match, metadata) = 48 / 50 = 0.9600
+```
+
+Untuk indikator lain:
+
+```text
+traceability_mean(chapter_match, metadata) = 50 / 50 = 1.0000
+traceability_mean(section_match, metadata) = 50 / 50 = 1.0000
+traceability_mean(label_match, metadata) = 50 / 50 = 1.0000
+```
+
+Baseline tetap bernilai `0 / 50 = 0.0000` pada keempat indikator karena field metadata tidak tersedia.
+
 ## Lampiran 4.1 Artefak Skor RAGAS dan Delta
 
 Artefak RAGAS publik:
