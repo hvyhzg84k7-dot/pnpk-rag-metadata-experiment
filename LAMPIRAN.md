@@ -40,92 +40,92 @@ Perhitungan pada lampiran ini mengikuti metode analisis yang dijelaskan pada Bab
 
 Ringkasan numerik utama yang diturunkan dari artefak publik adalah sebagai berikut:
 
-```text
-jumlah pertanyaan evaluasi               = 50
-jumlah keluaran RAGAS                   = 100
-jumlah baris retrieval_contexts_public   = 488
-```
+| Item | Jumlah |
+|------|-------:|
+| jumlah pertanyaan evaluasi | 50 |
+| jumlah keluaran RAGAS | 100 |
+| jumlah baris `retrieval_contexts_public` | 488 |
 
-Skor mentah RAGAS per pertanyaan disimpan dalam bentuk publik pada `results/ragas/ragas_scores_public.csv`. Kolom `context_relevance`, `faithfulness`, dan `answer_relevance` merupakan skor per `question_id` dan pipeline. Rata-rata skor untuk metrik `m` pada pipeline `p` dihitung sebagai berikut:
+Skor mentah RAGAS per pertanyaan disimpan dalam bentuk publik pada `results/ragas/ragas_scores_public.csv`. Kolom `context_relevance`, `faithfulness`, dan `answer_relevance` merupakan skor per `question_id` dan pipeline. Rata-rata skor untuk metrik $m$ pada pipeline $p$ dihitung sebagai berikut:
 
-```text
-s_bar(m, p) = sum(s(i, m, p) for i = 1..N) / N
-```
+$$
+\bar{s}(m, p) = \frac{\sum_{i=1}^{N} s(i, m, p)}{N}
+$$
 
 Keterangan:
 
-```text
-s_bar(m, p)  = rata-rata skor metrik m pada pipeline p
-s(i, m, p)  = skor pertanyaan ke-i untuk metrik m pada pipeline p
-N           = jumlah pertanyaan evaluasi, yaitu 50
-m           = context_relevance, faithfulness, atau answer_relevance
-p           = baseline atau metadata
-```
+| Simbol | Keterangan |
+|--------|------------|
+| $\bar{s}(m, p)$ | rata-rata skor metrik $m$ pada pipeline $p$ |
+| $s(i, m, p)$ | skor pertanyaan ke-$i$ untuk metrik $m$ pada pipeline $p$ |
+| $N$ | jumlah pertanyaan evaluasi, yaitu 50 |
+| $m$ | `context_relevance`, `faithfulness`, atau `answer_relevance` |
+| $p$ | `baseline` atau `metadata` |
 
 Nilai delta pada Bab 4 dan pada `results/ragas/ragas_summary_final.csv` dihitung sebagai selisih rata-rata metadata terhadap baseline:
 
-```text
-delta(m) = s_bar(m, metadata) - s_bar(m, baseline)
-```
+$$
+\Delta(m) = \bar{s}(m, \text{metadata}) - \bar{s}(m, \text{baseline})
+$$
 
 Selain delta rata-rata, lampiran juga menyertakan perbandingan per pertanyaan pada `results/ragas/ragas_delta_by_question.csv`. Perhitungan per pertanyaan menggunakan rumus berikut:
 
-```text
-delta_i(m) = s(i, m, metadata) - s(i, m, baseline)
-```
+$$
+\Delta_i(m) = s(i, m, \text{metadata}) - s(i, m, \text{baseline})
+$$
 
-Kolom `comparison_*` ditentukan dari nilai `delta_i(m)`:
+Kolom `comparison_*` ditentukan dari nilai $\Delta_i(m)$:
 
-```text
-metadata_higher = delta_i(m) > 0
-equal           = delta_i(m) = 0
-metadata_lower  = delta_i(m) < 0
-```
+| Kondisi | Nilai `comparison_*` |
+|---------|---------------------|
+| $\Delta_i(m) > 0$ | `metadata_higher` |
+| $\Delta_i(m) = 0$ | `equal` |
+| $\Delta_i(m) < 0$ | `metadata_lower` |
 
 Indikator keterlacakan sumber tidak dihitung oleh RAGAS, tetapi dihitung terpisah sesuai metode Bab 3. Setiap indikator bernilai 1 jika minimal satu dari lima konteks teratas memiliki metadata yang cocok dengan rujukan dataset, dan bernilai 0 jika tidak cocok atau metadata tidak tersedia.
 
-```text
-traceability_mean(indicator, p) =
-  sum(match(i, indicator, p) for i = 1..N) / N
-```
+$$
+\text{traceability\_mean}(\text{indicator}, p) =
+\frac{\sum_{i=1}^{N} \text{match}(i, \text{indicator}, p)}{N}
+$$
 
 Keterangan:
 
-```text
-indicator = page_match, chapter_match, section_match, atau label_match
-match     = 1 jika minimal satu konteks top-5 cocok, 0 jika tidak
-p         = baseline atau metadata
-N         = 50
-```
+| Simbol | Keterangan |
+|--------|------------|
+| `indicator` | `page_match`, `chapter_match`, `section_match`, atau `label_match` |
+| `match` | 1 jika minimal satu konteks top-5 cocok, 0 jika tidak |
+| $p$ | `baseline` atau `metadata` |
+| $N$ | 50 |
 
 Pada baseline, indikator keterlacakan bernilai 0 karena pipeline baseline tidak menyimpan metadata halaman, bab, bagian, dan label. Nilai 0 tersebut berarti field metadata tidak tersedia untuk dihitung, bukan berarti semua konteks baseline pasti tidak relevan secara semantik.
 
 Ringkasan hasil terhitung dari artefak publik:
 
-```text
-context_relevance: baseline=0.9200, metadata=0.9800, delta=0.0600
-faithfulness:      baseline=0.8861, metadata=0.9662, delta=0.0800
-answer_relevance:  baseline=0.8354, metadata=0.8553, delta=0.0199
-```
+| Metrik | Baseline | Metadata | $\Delta$ |
+|--------|---------:|---------:|---------:|
+| `context_relevance` | 0.9200 | 0.9800 | 0.0600 |
+| `faithfulness` | 0.8861 | 0.9662 | 0.0800 |
+| `answer_relevance` | 0.8354 | 0.8553 | 0.0199 |
 
 Distribusi per pertanyaan pada `results/ragas/ragas_delta_by_question.csv` juga sudah diringkas sebagai berikut:
 
-```text
-context_relevance: metadata_higher=5, equal=45, metadata_lower=0
-faithfulness:      metadata_higher=11, equal=38, metadata_lower=1
-answer_relevance:  metadata_higher=23, equal=4,  metadata_lower=23
-```
+| Metrik | `metadata_higher` | `equal` | `metadata_lower` |
+|--------|------------------:|-------:|-----------------:|
+| `context_relevance` | 5 | 45 | 0 |
+| `faithfulness` | 11 | 38 | 1 |
+| `answer_relevance` | 23 | 4 | 23 |
 
 Ringkasan keterlacakan sumber pada lima konteks teratas:
 
-```text
-page_match:    baseline=0/50, metadata=48/50
-chapter_match: baseline=0/50, metadata=50/50
-section_match: baseline=0/50, metadata=50/50
-label_match:   baseline=0/50, metadata=50/50
-```
+| Indikator | Baseline | Metadata |
+|-----------|---------:|---------:|
+| `page_match` | 0/50 | 48/50 |
+| `chapter_match` | 0/50 | 50/50 |
+| `section_match` | 0/50 | 50/50 |
+| `label_match` | 0/50 | 50/50 |
 
-Pada metrik keterlacakan, metadata_filter_used muncul pada 50 dari 50 pertanyaan, sedangkan metadata_filter_fallback_used bernilai 0 dari 50 pertanyaan. Ini menunjukkan filter metadata aktif pada seluruh evaluasi dan tidak perlu fallback.
+Pada metrik keterlacakan, `metadata_filter_used` muncul pada 50 dari 50 pertanyaan, sedangkan `metadata_filter_fallback_used` bernilai 0 dari 50 pertanyaan. Ini menunjukkan filter metadata aktif pada seluruh evaluasi dan tidak perlu fallback.
 
 ## Contoh Substitusi Angka ke Rumus
 
@@ -135,45 +135,49 @@ Bagian ini menunjukkan bagaimana angka pada CSV masuk ke rumus pada bagian sebel
 
 Untuk `context_relevance` pada baseline:
 
-```text
-s_bar(context_relevance, baseline) = 46.00 / 50 = 0.9200
-```
+$$
+\bar{s}(\text{context\_relevance}, \text{baseline}) = \frac{46.00}{50} = 0.9200
+$$
 
 Untuk `context_relevance` pada metadata:
 
-```text
-s_bar(context_relevance, metadata) = 49.00 / 50 = 0.9800
-```
+$$
+\bar{s}(\text{context\_relevance}, \text{metadata}) = \frac{49.00}{50} = 0.9800
+$$
 
 Sehingga delta metrik tersebut adalah:
 
-```text
-delta(context_relevance) = 0.9800 - 0.9200 = 0.0600
-```
+$$
+\Delta(\text{context\_relevance}) = 0.9800 - 0.9200 = 0.0600
+$$
 
 Untuk `faithfulness`:
 
-```text
-s_bar(faithfulness, baseline) = 44.3073870573 / 50 = 0.8861477411
-s_bar(faithfulness, metadata) = 48.3095238094 / 50 = 0.9661904762
-delta(faithfulness) = 0.9661904762 - 0.8861477411 = 0.0800427351
-```
+$$
+\begin{aligned}
+\bar{s}(\text{faithfulness}, \text{baseline}) &= \frac{44.3073870573}{50} = 0.8861477411 \\[4pt]
+\bar{s}(\text{faithfulness}, \text{metadata}) &= \frac{48.3095238094}{50} = 0.9661904762 \\[4pt]
+\Delta(\text{faithfulness}) &= 0.9661904762 - 0.8861477411 = 0.0800427351
+\end{aligned}
+$$
 
 Untuk `answer_relevance`:
 
-```text
-s_bar(answer_relevance, baseline) = 41.7709470526 / 50 = 0.8354189411
-s_bar(answer_relevance, metadata) = 42.7672762990 / 50 = 0.8553455260
-delta(answer_relevance) = 0.8553455260 - 0.8354189411 = 0.0199265849
-```
+$$
+\begin{aligned}
+\bar{s}(\text{answer\_relevance}, \text{baseline}) &= \frac{41.7709470526}{50} = 0.8354189411 \\[4pt]
+\bar{s}(\text{answer\_relevance}, \text{metadata}) &= \frac{42.7672762990}{50} = 0.8553455260 \\[4pt]
+\Delta(\text{answer\_relevance}) &= 0.8553455260 - 0.8354189411 = 0.0199265849
+\end{aligned}
+$$
 
 ### Per Pertanyaan
 
 Untuk Q03 pada `answer_relevance`:
 
-```text
-delta_3(answer_relevance) = 0.7994447183 - 0.8947299409 = -0.0952852226
-```
+$$
+\Delta_3(\text{answer\_relevance}) = 0.7994447183 - 0.8947299409 = -0.0952852226
+$$
 
 Nilai negatif ini menyebabkan `comparison_answer_relevance` bernilai `metadata_lower`.
 
@@ -181,19 +185,21 @@ Nilai negatif ini menyebabkan `comparison_answer_relevance` bernilai `metadata_l
 
 Untuk `page_match` pada metadata:
 
-```text
-traceability_mean(page_match, metadata) = 48 / 50 = 0.9600
-```
+$$
+\text{traceability\_mean}(\text{page\_match}, \text{metadata}) = \frac{48}{50} = 0.9600
+$$
 
 Untuk indikator lain:
 
-```text
-traceability_mean(chapter_match, metadata) = 50 / 50 = 1.0000
-traceability_mean(section_match, metadata) = 50 / 50 = 1.0000
-traceability_mean(label_match, metadata) = 50 / 50 = 1.0000
-```
+$$
+\begin{aligned}
+\text{traceability\_mean}(\text{chapter\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000 \\[4pt]
+\text{traceability\_mean}(\text{section\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000 \\[4pt]
+\text{traceability\_mean}(\text{label\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000
+\end{aligned}
+$$
 
-Baseline tetap bernilai `0 / 50 = 0.0000` pada keempat indikator karena field metadata tidak tersedia.
+Baseline tetap bernilai $0 / 50 = 0.0000$ pada keempat indikator karena field metadata tidak tersedia.
 
 ## Lampiran 4.1 Artefak Skor RAGAS dan Delta
 
