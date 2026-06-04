@@ -34,6 +34,64 @@ question, reference_answer, reference_context, source_page, chapter, section, la
 
 Artefak publik hanya menampilkan bagian yang aman untuk audit, yaitu daftar pertanyaan, halaman sumber, bab, bagian, dan label. Jawaban acuan dan konteks acuan tidak dipublikasikan.
 
+## Dasar Perhitungan Skor
+
+Perhitungan pada lampiran ini mengikuti metode analisis yang dijelaskan pada Bab 3 dan digunakan untuk menyusun tabel hasil pada Bab 4. Setiap pertanyaan evaluasi dijalankan pada dua pipeline, yaitu baseline dan metadata. Dengan 50 pertanyaan evaluasi, terdapat 50 skor untuk setiap metrik pada masing-masing pipeline.
+
+Skor mentah RAGAS per pertanyaan disimpan dalam bentuk publik pada `results/ragas/ragas_scores_public.csv`. Kolom `context_relevance`, `faithfulness`, dan `answer_relevance` merupakan skor per `question_id` dan pipeline. Rata-rata skor untuk metrik `m` pada pipeline `p` dihitung sebagai berikut:
+
+```text
+s_bar(m, p) = sum(s(i, m, p) for i = 1..N) / N
+```
+
+Keterangan:
+
+```text
+s_bar(m, p)  = rata-rata skor metrik m pada pipeline p
+s(i, m, p)  = skor pertanyaan ke-i untuk metrik m pada pipeline p
+N           = jumlah pertanyaan evaluasi, yaitu 50
+m           = context_relevance, faithfulness, atau answer_relevance
+p           = baseline atau metadata
+```
+
+Nilai delta pada Bab 4 dan pada `results/ragas/ragas_summary_final.csv` dihitung sebagai selisih rata-rata metadata terhadap baseline:
+
+```text
+delta(m) = s_bar(m, metadata) - s_bar(m, baseline)
+```
+
+Selain delta rata-rata, lampiran juga menyertakan perbandingan per pertanyaan pada `results/ragas/ragas_delta_by_question.csv`. Perhitungan per pertanyaan menggunakan rumus berikut:
+
+```text
+delta_i(m) = s(i, m, metadata) - s(i, m, baseline)
+```
+
+Kolom `comparison_*` ditentukan dari nilai `delta_i(m)`:
+
+```text
+metadata_higher = delta_i(m) > 0
+equal           = delta_i(m) = 0
+metadata_lower  = delta_i(m) < 0
+```
+
+Indikator keterlacakan sumber tidak dihitung oleh RAGAS, tetapi dihitung terpisah sesuai metode Bab 3. Setiap indikator bernilai 1 jika minimal satu dari lima konteks teratas memiliki metadata yang cocok dengan rujukan dataset, dan bernilai 0 jika tidak cocok atau metadata tidak tersedia.
+
+```text
+traceability_mean(indicator, p) =
+  sum(match(i, indicator, p) for i = 1..N) / N
+```
+
+Keterangan:
+
+```text
+indicator = page_match, chapter_match, section_match, atau label_match
+match     = 1 jika minimal satu konteks top-5 cocok, 0 jika tidak
+p         = baseline atau metadata
+N         = 50
+```
+
+Pada baseline, indikator keterlacakan bernilai 0 karena pipeline baseline tidak menyimpan metadata halaman, bab, bagian, dan label. Nilai 0 tersebut berarti field metadata tidak tersedia untuk dihitung, bukan berarti semua konteks baseline pasti tidak relevan secara semantik.
+
 ## Lampiran 4.1 Artefak Skor RAGAS dan Delta
 
 Artefak RAGAS publik:
@@ -49,13 +107,7 @@ Artefak RAGAS publik:
 
 `ragas_summary_final.csv` memuat rata-rata, nilai minimum, nilai maksimum, dan ringkasan selisih metadata terhadap baseline.
 
-Rumus perhitungan ringkas:
-
-```text
-mean(m, p) = sum(score_i for question i in pipeline p) / n
-delta(m) = mean(m, metadata) - mean(m, baseline)
-delta_i(m) = score_i(m, metadata) - score_i(m, baseline)
-```
+Nilai pada ketiga artefak tersebut dihitung menggunakan rumus pada bagian "Dasar Perhitungan Skor". Dengan demikian, angka yang muncul pada Bab 4 dapat ditelusuri dari skor per pertanyaan, rata-rata per pipeline, delta rata-rata, dan delta per pertanyaan.
 
 ## Lampiran 4.2 Artefak Retrieval dan Keterlacakan Sumber
 
@@ -74,6 +126,8 @@ page_match, chapter_match, section_match, label_match
 ```
 
 `traceability_summary_public.csv` memuat ringkasan rata-rata dan jumlah kecocokan untuk setiap indikator.
+
+Rata-rata pada `traceability_summary_public.csv` dihitung sebagai proporsi jumlah pertanyaan yang memiliki kecocokan metadata pada lima konteks teratas. Perhitungan ini mengikuti indikator keterlacakan sumber yang dijelaskan pada bagian "Dasar Perhitungan Skor".
 
 ## Lampiran 4.3 Repositori Lampiran Publik
 
