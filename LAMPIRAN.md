@@ -155,8 +155,8 @@ Untuk `faithfulness`:
 
 $$
 \begin{aligned}
-\bar{s}(\text{faithfulness}, \text{baseline}) &= \frac{44.3073870573}{50} = 0.8861477411 \\[4pt]
-\bar{s}(\text{faithfulness}, \text{metadata}) &= \frac{48.3095238094}{50} = 0.9661904762 \\[4pt]
+\bar{s}(\text{faithfulness}, \text{baseline}) &= \frac{44.3073870573}{50} = 0.8861477411 \\
+\bar{s}(\text{faithfulness}, \text{metadata}) &= \frac{48.3095238094}{50} = 0.9661904762 \\
 \Delta(\text{faithfulness}) &= 0.9661904762 - 0.8861477411 = 0.0800427351
 \end{aligned}
 $$
@@ -165,8 +165,8 @@ Untuk `answer_relevance`:
 
 $$
 \begin{aligned}
-\bar{s}(\mathrm{answer\_relevance}, \text{baseline}) &= \frac{41.7709470526}{50} = 0.8354189411 \\[4pt]
-\bar{s}(\mathrm{answer\_relevance}, \text{metadata}) &= \frac{42.7672762990}{50} = 0.8553455260 \\[4pt]
+\bar{s}(\mathrm{answer\_relevance}, \text{baseline}) &= \frac{41.7709470526}{50} = 0.8354189411 \\
+\bar{s}(\mathrm{answer\_relevance}, \text{metadata}) &= \frac{42.7672762990}{50} = 0.8553455260 \\
 \Delta(\mathrm{answer\_relevance}) &= 0.8553455260 - 0.8354189411 = 0.0199265849
 \end{aligned}
 $$
@@ -193,8 +193,8 @@ Untuk indikator lain:
 
 $$
 \begin{aligned}
-\mathrm{traceability\_mean}(\mathrm{chapter\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000 \\[4pt]
-\mathrm{traceability\_mean}(\mathrm{section\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000 \\[4pt]
+\mathrm{traceability\_mean}(\mathrm{chapter\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000 \\
+\mathrm{traceability\_mean}(\mathrm{section\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000 \\
 \mathrm{traceability\_mean}(\mathrm{label\_match}, \text{metadata}) &= \frac{50}{50} = 1.0000
 \end{aligned}
 $$
