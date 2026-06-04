@@ -1,0 +1,10 @@
+metric,pipeline,n,mean,min,max,metadata_minus_baseline,metadata_higher_count,metadata_equal_count,metadata_lower_count
+context_relevance,baseline,50,0.92,0.0,1.0,,,,
+context_relevance,metadata,50,0.98,0.5,1.0,,,,
+context_relevance,comparison,50,,,,0.05999999999999994,5,45,0
+faithfulness,baseline,50,0.8861477411459999,0.0,1.0,,,,
+faithfulness,metadata,50,0.9661904761879999,0.2857142857,1.0,,,,
+faithfulness,comparison,50,,,,0.08004273504199999,11,38,1
+answer_relevance,baseline,50,0.835418941052,0.0,1.0,,,,
+answer_relevance,metadata,50,0.85534552598,0.6100265214,1.0,,,,
+answer_relevance,comparison,50,,,,0.019926584928000035,23,4,23

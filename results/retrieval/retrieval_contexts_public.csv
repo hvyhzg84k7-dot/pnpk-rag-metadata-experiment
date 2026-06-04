@@ -1,0 +1,489 @@
+question_id,pipeline,rank,chunk_id,score,distance,page,chapter,section,labels,metadata_filter_used,metadata_filter_fallback_used
+Q01,baseline,1,A-0011,0.2750294209,0.7249705791,,,,,0,0
+Q01,baseline,2,A-0001,0.261785388,0.738214612,,,,,0,0
+Q01,baseline,3,A-0130,0.2288268805,0.7711731195,,,,,0,0
+Q01,baseline,4,A-0003,0.2154460549,0.7845539451,,,,,0,0
+Q01,baseline,5,A-0205,0.2077996731,0.7922003269,,,,,0,0
+Q01,metadata,1,B-0001,0.261785388,0.738214612,13,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|definisi diabetes|pemeriksaan c-peptida,1,0
+Q02,baseline,1,A-0003,0.3288263679,0.6711736321,,,,,0,0
+Q02,baseline,2,A-0001,0.3139884472,0.6860115528,,,,,0,0
+Q02,baseline,3,A-0011,0.2574501038,0.7425498962,,,,,0,0
+Q02,baseline,4,A-0130,0.2112286091,0.7887713909,,,,,0,0
+Q02,baseline,5,A-0004,0.2091397643,0.7908602357,,,,,0,0
+Q02,metadata,1,B-0003,0.3288263679,0.6711736321,14,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|diagnosis dm tipe-1,1,0
+Q02,metadata,2,B-0001,0.3139884472,0.6860115528,13,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|definisi diabetes|pemeriksaan c-peptida,1,0
+Q02,metadata,3,B-0004,0.2091397643,0.7908602357,14,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|diagnosis dm tipe-1|pemeriksaan c-peptida,1,0
+Q02,metadata,4,B-0002,0.1807547808,0.8192452192,13,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|pemeriksaan c-peptida,1,0
+Q02,metadata,5,B-0006,0.1509258747,0.8490741253,15,BAB III,A. Definisi dan Klasifikasi,diagnosis dm tipe-1|klasifikasi diabetes,1,0
+Q03,baseline,1,A-0011,0.3600246906,0.6399753094,,,,,0,0
+Q03,baseline,2,A-0080,0.352124691,0.647875309,,,,,0,0
+Q03,baseline,3,A-0010,0.3345874548,0.6654125452,,,,,0,0
+Q03,baseline,4,A-0207,0.3225607872,0.6774392128,,,,,0,0
+Q03,baseline,5,A-0221,0.322481513,0.677518487,,,,,0,0
+Q03,metadata,1,B-0010,0.3345874548,0.6654125452,17,BAB III,C. Diabetes Melitus Tipe-1,pemeriksaan c-peptida|pemeriksaan insulin|diagnosis umum diabetes,1,0
+Q03,metadata,2,B-0007,0.2522304058,0.7477695942,16,BAB III,B. Diagnosis,diagnosis umum diabetes,1,0
+Q03,metadata,3,B-0009,0.148381114,0.851618886,16,BAB III,B. Diagnosis,diagnosis umum diabetes,1,0
+Q03,metadata,4,B-0008,0.0976364613,0.9023635387,16,BAB III,B. Diagnosis,diagnosis umum diabetes,1,0
+Q04,baseline,1,A-0010,0.3120986223,0.6879013777,,,,,0,0
+Q04,baseline,2,A-0080,0.2972820997,0.7027179003,,,,,0,0
+Q04,baseline,3,A-0011,0.2804862261,0.7195137739,,,,,0,0
+Q04,baseline,4,A-0014,0.2786103487,0.7213896513,,,,,0,0
+Q04,baseline,5,A-0009,0.272300303,0.727699697,,,,,0,0
+Q04,metadata,1,B-0010,0.3120986223,0.6879013777,17,BAB III,C. Diabetes Melitus Tipe-1,pemeriksaan c-peptida|pemeriksaan insulin|diagnosis umum diabetes,1,0
+Q04,metadata,2,B-0009,0.272300303,0.727699697,16,BAB III,B. Diagnosis,diagnosis umum diabetes,1,0
+Q04,metadata,3,B-0007,0.2469306588,0.7530693412,16,BAB III,B. Diagnosis,diagnosis umum diabetes,1,0
+Q04,metadata,4,B-0046,0.2296983004,0.7703016996,34,BAB III,C. Diabetes Melitus Tipe-1,dosis insulin|pemantauan hba1c|pemantauan glukosa,1,0
+Q04,metadata,5,B-0082,0.2295903563,0.7704096437,51,BAB III,C. Diabetes Melitus Tipe-1,pemantauan hba1c|pemantauan glukosa|penyesuaian insulin,1,0
+Q05,baseline,1,A-0012,0.428653121,0.571346879,,,,,0,0
+Q05,baseline,2,A-0003,0.4209599495,0.5790400505,,,,,0,0
+Q05,baseline,3,A-0177,0.3675661087,0.6324338913,,,,,0,0
+Q05,baseline,4,A-0011,0.3652478456,0.6347521544,,,,,0,0
+Q05,baseline,5,A-0221,0.3444982767,0.6555017233,,,,,0,0
+Q05,metadata,1,B-0012,0.428653121,0.571346879,17,BAB III,C. Diabetes Melitus Tipe-1,diagnosis dm tipe-1,1,0
+Q05,metadata,2,B-0003,0.4209599495,0.5790400505,14,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|diagnosis dm tipe-1,1,0
+Q05,metadata,3,B-0011,0.3652478456,0.6347521544,17,BAB III,C. Diabetes Melitus Tipe-1,diagnosis dm tipe-1|pemeriksaan c-peptida,1,0
+Q05,metadata,4,B-0004,0.3145821095,0.6854178905,14,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|diagnosis dm tipe-1|pemeriksaan c-peptida,1,0
+Q05,metadata,5,B-0006,0.3069468737,0.6930531263,15,BAB III,A. Definisi dan Klasifikasi,diagnosis dm tipe-1|klasifikasi diabetes,1,0
+Q06,baseline,1,A-0091,0.4243735075,0.5756264925,,,,,0,0
+Q06,baseline,2,A-0017,0.3786655664,0.6213344336,,,,,0,0
+Q06,baseline,3,A-0090,0.3725470901,0.6274529099,,,,,0,0
+Q06,baseline,4,A-0084,0.3439922333,0.6560077667,,,,,0,0
+Q06,baseline,5,A-0089,0.3244267702,0.6755732298,,,,,0,0
+Q06,metadata,1,B-0091,0.4243735075,0.5756264925,55,BAB III,C. Diabetes Melitus Tipe-1,komplikasi akut kad|pemeriksaan keton,1,0
+Q06,metadata,2,B-0017,0.3786655664,0.6213344336,20,BAB III,C. Diabetes Melitus Tipe-1,komplikasi akut kad|diagnosis dm tipe-1,1,0
+Q06,metadata,3,B-0090,0.3725470901,0.6274529099,55,BAB III,C. Diabetes Melitus Tipe-1,tata laksana saat sakit|pemeriksaan keton|komplikasi akut kad,1,0
+Q06,metadata,4,B-0084,0.3439922333,0.6560077667,52,BAB III,C. Diabetes Melitus Tipe-1,tata laksana saat sakit|komplikasi akut kad|pemeriksaan keton,1,0
+Q06,metadata,5,B-0089,0.3244267702,0.6755732298,55,BAB III,C. Diabetes Melitus Tipe-1,pemeriksaan keton|tata laksana saat sakit|komplikasi akut kad,1,0
+Q07,baseline,1,A-0019,0.4154030085,0.5845969915,,,,,0,0
+Q07,baseline,2,A-0042,0.1970114708,0.8029885292,,,,,0,0
+Q07,baseline,3,A-0013,0.1922210455,0.8077789545,,,,,0,0
+Q07,baseline,4,A-0018,0.181137979,0.818862021,,,,,0,0
+Q07,baseline,5,A-0005,0.166744113,0.833255887,,,,,0,0
+Q07,metadata,1,B-0019,0.4155260324,0.5844739676,21,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|hipoglikemia|pemantauan hba1c,1,0
+Q07,metadata,2,B-0042,0.1972165108,0.8027834892,32,BAB III,C. Diabetes Melitus Tipe-1,regimen insulin|terapi insulin|pemantauan hba1c,1,0
+Q07,metadata,3,B-0192,0.1555452943,0.8444547057,103,BAB III,D. Diabetes Melitus Tipe-2,monitoring dm tipe-2|pemantauan hba1c|pemantauan glukosa,1,0
+Q07,metadata,4,B-0021,0.1546319723,0.8453680277,22,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|edukasi diabetes dm tipe-1|manajemen di sekolah,1,0
+Q07,metadata,5,B-0023,0.0749999881,0.9250000119,23,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin|terapi insulin|pengelolaan dm tipe-1,1,0
+Q08,baseline,1,A-0021,0.4726557732,0.5273442268,,,,,0,0
+Q08,baseline,2,A-0019,0.3969578743,0.6030421257,,,,,0,0
+Q08,baseline,3,A-0020,0.3547888994,0.6452111006,,,,,0,0
+Q08,baseline,4,A-0206,0.344942987,0.655057013,,,,,0,0
+Q08,baseline,5,A-0130,0.3377474546,0.6622525454,,,,,0,0
+Q08,metadata,1,B-0021,0.4726557732,0.5273442268,22,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|edukasi diabetes dm tipe-1|manajemen di sekolah,1,0
+Q08,metadata,2,B-0019,0.3969578743,0.6030421257,21,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|hipoglikemia|pemantauan hba1c,1,0
+Q08,metadata,3,B-0206,0.344942987,0.655057013,111,BAB IV,A. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|rekomendasi dm tipe-1|terapi insulin,1,0
+Q08,metadata,4,B-0057,0.284452796,0.715547204,40,BAB III,C. Diabetes Melitus Tipe-1,teknik penyuntikan insulin|edukasi diabetes dm tipe-1,1,0
+Q08,metadata,5,B-0059,0.2668662667,0.7331337333,41,BAB III,C. Diabetes Melitus Tipe-1,pengaturan makan dm tipe-1|teknik penyuntikan insulin,1,0
+Q09,baseline,1,A-0023,0.4406864643,0.5593135357,,,,,0,0
+Q09,baseline,2,A-0021,0.3316270709,0.6683729291,,,,,0,0
+Q09,baseline,3,A-0110,0.3264191151,0.6735808849,,,,,0,0
+Q09,baseline,4,A-0019,0.3222557306,0.6777442694,,,,,0,0
+Q09,baseline,5,A-0005,0.316165328,0.683834672,,,,,0,0
+Q09,metadata,1,B-0023,0.4407920837,0.5592079163,23,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin|terapi insulin|pengelolaan dm tipe-1,1,0
+Q09,metadata,2,B-0206,0.2921258807,0.7078741193,111,BAB IV,A. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|rekomendasi dm tipe-1|terapi insulin,1,0
+Q09,metadata,3,B-0041,0.2691268921,0.7308731079,32,BAB III,C. Diabetes Melitus Tipe-1,regimen insulin|penyesuaian insulin|terapi insulin,1,0
+Q09,metadata,4,B-0067,0.2676756382,0.7323243618,44,BAB III,C. Diabetes Melitus Tipe-1,pengaturan makan dm tipe-1|regimen insulin,1,0
+Q09,metadata,5,B-0029,0.2217651606,0.7782348394,26,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin|terapi insulin|regimen insulin,1,0
+Q10,baseline,1,A-0024,0.3523975015,0.6476024985,,,,,0,0
+Q10,baseline,2,A-0025,0.3294956684,0.6705043316,,,,,0,0
+Q10,baseline,3,A-0034,0.2929430604,0.7070569396,,,,,0,0
+Q10,baseline,4,A-0027,0.2573294044,0.7426705956,,,,,0,0
+Q10,baseline,5,A-0035,0.2407387495,0.7592612505,,,,,0,0
+Q10,metadata,1,B-0024,0.3523975015,0.6476024985,23,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin,1,0
+Q10,metadata,2,B-0025,0.3294956684,0.6705043316,24,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin|regimen insulin,1,0
+Q10,metadata,3,B-0034,0.2929430604,0.7070569396,28,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin|regimen insulin,1,0
+Q10,metadata,4,B-0027,0.2573294044,0.7426705956,25,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin|regimen insulin|tata laksana saat sakit,1,0
+Q10,metadata,5,B-0035,0.2407387495,0.7592612505,29,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin,1,0
+Q11,baseline,1,A-0031,0.5131369233,0.4868630767,,,,,0,0
+Q11,baseline,2,A-0032,0.4798964262,0.5201035738,,,,,0,0
+Q11,baseline,3,A-0030,0.3765100241,0.6234899759,,,,,0,0
+Q11,baseline,4,A-0024,0.3743835688,0.6256164312,,,,,0,0
+Q11,baseline,5,A-0036,0.3637285829,0.6362714171,,,,,0,0
+Q11,metadata,1,B-0031,0.5131369233,0.4868630767,27,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin|regimen insulin|hipoglikemia,1,0
+Q11,metadata,2,B-0032,0.4798964262,0.5201035738,27,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin,1,0
+Q11,metadata,3,B-0030,0.3765100241,0.6234899759,26,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin|terapi insulin|regimen insulin,1,0
+Q11,metadata,4,B-0024,0.3743835688,0.6256164312,23,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin,1,0
+Q11,metadata,5,B-0036,0.3637285829,0.6362714171,29,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin|regimen insulin|aspek psikososial,1,0
+Q12,baseline,1,A-0040,0.4743099213,0.5256900787,,,,,0,0
+Q12,baseline,2,A-0039,0.4567754269,0.5432245731,,,,,0,0
+Q12,baseline,3,A-0057,0.3513169885,0.6486830115,,,,,0,0
+Q12,baseline,4,A-0037,0.3494541049,0.6505458951,,,,,0,0
+Q12,baseline,5,A-0038,0.3457193375,0.6542806625,,,,,0,0
+Q12,metadata,1,B-0040,0.4743099213,0.5256900787,31,BAB III,C. Diabetes Melitus Tipe-1,regimen insulin|teknik penyuntikan insulin,1,0
+Q12,metadata,2,B-0039,0.4567754269,0.5432245731,31,BAB III,C. Diabetes Melitus Tipe-1,penyimpanan insulin|teknik penyuntikan insulin,1,0
+Q12,metadata,3,B-0057,0.3513169885,0.6486830115,40,BAB III,C. Diabetes Melitus Tipe-1,teknik penyuntikan insulin|edukasi diabetes dm tipe-1,1,0
+Q12,metadata,4,B-0037,0.3494541049,0.6505458951,30,BAB III,C. Diabetes Melitus Tipe-1,penyimpanan insulin|jenis insulin,1,0
+Q12,metadata,5,B-0038,0.3457193375,0.6542806625,30,BAB III,C. Diabetes Melitus Tipe-1,penyimpanan insulin,1,0
+Q13,baseline,1,A-0065,0.3769012094,0.6230987906,,,,,0,0
+Q13,baseline,2,A-0059,0.3343794942,0.6656205058,,,,,0,0
+Q13,baseline,3,A-0021,0.296854496,0.703145504,,,,,0,0
+Q13,baseline,4,A-0060,0.2940430045,0.7059569955,,,,,0,0
+Q13,baseline,5,A-0019,0.2895007133,0.7104992867,,,,,0,0
+Q13,metadata,1,B-0065,0.3769012094,0.6230987906,43,BAB III,C. Diabetes Melitus Tipe-1,pengaturan makan dm tipe-1|pemantauan glukosa,1,0
+Q13,metadata,2,B-0059,0.3343794942,0.6656205058,41,BAB III,C. Diabetes Melitus Tipe-1,pengaturan makan dm tipe-1|teknik penyuntikan insulin,1,0
+Q13,metadata,3,B-0021,0.296854496,0.703145504,22,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|edukasi diabetes dm tipe-1|manajemen di sekolah,1,0
+Q13,metadata,4,B-0060,0.2940430045,0.7059569955,41,BAB III,C. Diabetes Melitus Tipe-1,pengaturan makan dm tipe-1|pertumbuhan dm tipe-1|hipoglikemia,1,0
+Q13,metadata,5,B-0067,0.2724826336,0.7275173664,44,BAB III,C. Diabetes Melitus Tipe-1,pengaturan makan dm tipe-1|regimen insulin,1,0
+Q14,baseline,1,A-0081,0.4906561375,0.5093438625,,,,,0,0
+Q14,baseline,2,A-0082,0.4209797978,0.5790202022,,,,,0,0
+Q14,baseline,3,A-0209,0.4114130139,0.5885869861,,,,,0,0
+Q14,baseline,4,A-0020,0.3493798971,0.6506201029,,,,,0,0
+Q14,baseline,5,A-0207,0.3039163351,0.6960836649,,,,,0,0
+Q14,metadata,1,B-0081,0.4906561375,0.5093438625,51,BAB III,C. Diabetes Melitus Tipe-1,pemantauan hba1c|hipoglikemia,1,0
+Q14,metadata,2,B-0082,0.4209797978,0.5790202022,51,BAB III,C. Diabetes Melitus Tipe-1,pemantauan hba1c|pemantauan glukosa|penyesuaian insulin,1,0
+Q14,metadata,3,B-0209,0.4114130139,0.5885869861,112,BAB IV,A. Diabetes Melitus Tipe-1,pemantauan hba1c|rekomendasi dm tipe-1|hipoglikemia,1,0
+Q14,metadata,4,B-0020,0.3493798971,0.6506201029,21,BAB III,C. Diabetes Melitus Tipe-1,pemantauan hba1c|peran tim kesehatan diabetes anak,1,0
+Q14,metadata,5,B-0046,0.270996809,0.729003191,34,BAB III,C. Diabetes Melitus Tipe-1,dosis insulin|pemantauan hba1c|pemantauan glukosa,1,0
+Q15,baseline,1,A-0131,0.4689791203,0.5310208797,,,,,0,0
+Q15,baseline,2,A-0212,0.3275419474,0.6724580526,,,,,0,0
+Q15,baseline,3,A-0017,0.3137867451,0.6862132549,,,,,0,0
+Q15,baseline,4,A-0018,0.2994859219,0.7005140781,,,,,0,0
+Q15,baseline,5,A-0090,0.2741881609,0.7258118391,,,,,0,0
+Q15,metadata,1,B-0131,0.4689791203,0.5310208797,73,BAB III,C. Diabetes Melitus Tipe-1,komplikasi akut kad,1,0
+Q15,metadata,2,B-0212,0.3275419474,0.6724580526,113,BAB IV,A. Diabetes Melitus Tipe-1,komplikasi akut kad|rekomendasi kad,1,0
+Q15,metadata,3,B-0017,0.3137867451,0.6862132549,20,BAB III,C. Diabetes Melitus Tipe-1,komplikasi akut kad|diagnosis dm tipe-1,1,0
+Q15,metadata,4,B-0018,0.2994859219,0.7005140781,20,BAB III,C. Diabetes Melitus Tipe-1,diagnosis dm tipe-1|komplikasi akut kad,1,0
+Q15,metadata,5,B-0090,0.2741881609,0.7258118391,55,BAB III,C. Diabetes Melitus Tipe-1,tata laksana saat sakit|pemeriksaan keton|komplikasi akut kad,1,0
+Q16,baseline,1,A-0222,0.4538969994,0.5461030006,,,,,0,0
+Q16,baseline,2,A-0013,0.4513465166,0.5486534834,,,,,0,0
+Q16,baseline,3,A-0193,0.4110543728,0.5889456272,,,,,0,0
+Q16,baseline,4,A-0130,0.369915843,0.630084157,,,,,0,0
+Q16,baseline,5,A-0196,0.3604310155,0.6395689845,,,,,0,0
+Q16,metadata,1,B-0130,0.369915843,0.630084157,73,BAB III,C. Diabetes Melitus Tipe-1,komplikasi akut kad|komplikasi kronik dm tipe-1,1,0
+Q16,metadata,2,B-0166,0.3161504269,0.6838495731,90,BAB III,C. Diabetes Melitus Tipe-1,komplikasi kronik dm tipe-1|aktivitas fisik dm tipe-1,1,0
+Q16,metadata,3,B-0173,0.289313674,0.710686326,94,BAB III,C. Diabetes Melitus Tipe-1,komplikasi kronik dm tipe-1|skrining komplikasi dm tipe-1,1,0
+Q16,metadata,4,B-0167,0.249394238,0.750605762,91,BAB III,C. Diabetes Melitus Tipe-1,skrining komplikasi dm tipe-1|komplikasi kronik dm tipe-1,1,0
+Q16,metadata,5,B-0165,0.2411317825,0.7588682175,90,BAB III,C. Diabetes Melitus Tipe-1,hipoglikemia|komplikasi kronik dm tipe-1,1,0
+Q17,baseline,1,A-0177,0.4653068185,0.5346931815,,,,,0,0
+Q17,baseline,2,A-0221,0.4423174858,0.5576825142,,,,,0,0
+Q17,baseline,3,A-0218,0.336725235,0.663274765,,,,,0,0
+Q17,baseline,4,A-0187,0.3330901265,0.6669098735,,,,,0,0
+Q17,baseline,5,A-0011,0.3309127092,0.6690872908,,,,,0,0
+Q17,metadata,1,B-0177,0.4653068185,0.5346931815,96,BAB III,D. Diabetes Melitus Tipe-2,diagnosis dm tipe-2|skrining komorbiditas dm tipe-1,1,0
+Q18,baseline,1,A-0003,0.4714865685,0.5285134315,,,,,0,0
+Q18,baseline,2,A-0221,0.4225715399,0.5774284601,,,,,0,0
+Q18,baseline,3,A-0004,0.3657819629,0.6342180371,,,,,0,0
+Q18,baseline,4,A-0177,0.3400759697,0.6599240303,,,,,0,0
+Q18,baseline,5,A-0187,0.3281390667,0.6718609333,,,,,0,0
+Q18,metadata,1,B-0177,0.3400759697,0.6599240303,96,BAB III,D. Diabetes Melitus Tipe-2,diagnosis dm tipe-2|skrining komorbiditas dm tipe-1,1,0
+Q18,metadata,2,B-0178,0.3247401118,0.6752598882,96,BAB III,D. Diabetes Melitus Tipe-2,skrining dm tipe-2,1,0
+Q19,baseline,1,A-0021,0.3610625267,0.6389374733,,,,,0,0
+Q19,baseline,2,A-0183,0.2687621117,0.7312378883,,,,,0,0
+Q19,baseline,3,A-0187,0.2558180094,0.7441819906,,,,,0,0
+Q19,baseline,4,A-0182,0.2512722611,0.7487277389,,,,,0,0
+Q19,baseline,5,A-0112,0.2438040376,0.7561959624,,,,,0,0
+Q19,metadata,1,B-0183,0.2687621117,0.7312378883,99,BAB III,D. Diabetes Melitus Tipe-2,aktivitas fisik dm tipe-2|pengaturan makan dm tipe-2,1,0
+Q19,metadata,2,B-0187,0.2558180094,0.7441819906,101,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|gaya hidup dm tipe-2,1,0
+Q19,metadata,3,B-0182,0.2512722611,0.7487277389,98,BAB III,D. Diabetes Melitus Tipe-2,pengaturan makan dm tipe-2|edukasi dm tipe-2,1,0
+Q19,metadata,4,B-0179,0.2402664423,0.7597335577,97,BAB III,D. Diabetes Melitus Tipe-2,edukasi dm tipe-2|gaya hidup dm tipe-2|pengaturan makan dm tipe-2,1,0
+Q19,metadata,5,B-0180,0.2378349304,0.7621650696,97,BAB III,D. Diabetes Melitus Tipe-2,gaya hidup dm tipe-2|pengaturan makan dm tipe-2|edukasi dm tipe-2,1,0
+Q20,baseline,1,A-0187,0.4834464192,0.5165535808,,,,,0,0
+Q20,baseline,2,A-0219,0.4704087973,0.5295912027,,,,,0,0
+Q20,baseline,3,A-0021,0.3189792633,0.6810207367,,,,,0,0
+Q20,baseline,4,A-0189,0.3112803698,0.6887196302,,,,,0,0
+Q20,baseline,5,A-0019,0.3064641953,0.6935358047,,,,,0,0
+Q20,metadata,1,B-0187,0.4834464192,0.5165535808,101,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|gaya hidup dm tipe-2,1,0
+Q20,metadata,2,B-0219,0.4704087973,0.5295912027,116,BAB IV,G. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|pengaturan makan dm tipe-2|aktivitas fisik dm tipe-2,1,0
+Q20,metadata,3,B-0189,0.3112803698,0.6887196302,102,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|monitoring dm tipe-2,1,0
+Q20,metadata,4,B-0177,0.3012142181,0.6987857819,96,BAB III,D. Diabetes Melitus Tipe-2,diagnosis dm tipe-2|skrining komorbiditas dm tipe-1,1,0
+Q20,metadata,5,B-0218,0.2398046851,0.7601953149,116,BAB IV,G. Diabetes Melitus Tipe-2,rekomendasi dm tipe-2|terapi medikamentosa dm tipe-2|gaya hidup dm tipe-2,1,0
+Q21,baseline,1,A-0081,0.4234552383,0.5765447617,,,,,0,0
+Q21,baseline,2,A-0192,0.4057146311,0.5942853689,,,,,0,0
+Q21,baseline,3,A-0020,0.3931905627,0.6068094373,,,,,0,0
+Q21,baseline,4,A-0082,0.3566914797,0.6433085203,,,,,0,0
+Q21,baseline,5,A-0211,0.3282974958,0.6717025042,,,,,0,0
+Q21,metadata,1,B-0081,0.4234552383,0.5765447617,51,BAB III,C. Diabetes Melitus Tipe-1,pemantauan hba1c|hipoglikemia,1,0
+Q21,metadata,2,B-0192,0.4057146311,0.5942853689,103,BAB III,D. Diabetes Melitus Tipe-2,monitoring dm tipe-2|pemantauan hba1c|pemantauan glukosa,1,0
+Q21,metadata,3,B-0020,0.3931905627,0.6068094373,21,BAB III,C. Diabetes Melitus Tipe-1,pemantauan hba1c|peran tim kesehatan diabetes anak,1,0
+Q21,metadata,4,B-0082,0.3566914797,0.6433085203,51,BAB III,C. Diabetes Melitus Tipe-1,pemantauan hba1c|pemantauan glukosa|penyesuaian insulin,1,0
+Q21,metadata,5,B-0220,0.2925207615,0.7074792385,117,BAB IV,G. Diabetes Melitus Tipe-2,monitoring dm tipe-2|komplikasi dm tipe-2|terapi medikamentosa dm tipe-2,1,0
+Q22,baseline,1,A-0204,0.3595963717,0.6404036283,,,,,0,0
+Q22,baseline,2,A-0123,0.3343393803,0.6656606197,,,,,0,0
+Q22,baseline,3,A-0203,0.3021988273,0.6978011727,,,,,0,0
+Q22,baseline,4,A-0122,0.2913537621,0.7086462379,,,,,0,0
+Q22,baseline,5,A-0124,0.2494652271,0.7505347729,,,,,0,0
+Q22,metadata,1,B-0204,0.3595963717,0.6404036283,109,BAB III,E. Pengelolaan Pada Masa Transisi,masa transisi|peran tim kesehatan diabetes anak,1,0
+Q22,metadata,2,B-0123,0.3343393803,0.6656606197,70,BAB III,C. Diabetes Melitus Tipe-1,manajemen saat perjalanan|edukasi diabetes dm tipe-1|penyesuaian insulin,1,0
+Q22,metadata,3,B-0203,0.3021988273,0.6978011727,109,BAB III,E. Pengelolaan Pada Masa Transisi,masa transisi|aspek psikososial,1,0
+Q22,metadata,4,B-0122,0.2913537621,0.7086462379,69,BAB III,C. Diabetes Melitus Tipe-1,manajemen saat perjalanan|edukasi diabetes dm tipe-1|penyesuaian insulin,1,0
+Q22,metadata,5,B-0110,0.188765645,0.811234355,64,BAB III,C. Diabetes Melitus Tipe-1,puasa ramadhan|edukasi diabetes dm tipe-1|pemantauan glukosa,1,0
+Q23,baseline,1,A-0205,0.5350979865,0.4649020135,,,,,0,0
+Q23,baseline,2,A-0129,0.2721621394,0.7278378606,,,,,0,0
+Q23,baseline,3,A-0128,0.2579315901,0.7420684099,,,,,0,0
+Q23,baseline,4,A-0092,0.2537115216,0.7462884784,,,,,0,0
+Q23,baseline,5,A-0117,0.2097899318,0.7902100682,,,,,0,0
+Q23,metadata,1,B-0205,0.5350979865,0.4649020135,110,BAB III,F. Penanganan Diabetes Melitus oleh Tenaga Medis dan Tenaga Kesehatan,peran tim kesehatan diabetes anak,1,0
+Q23,metadata,2,B-0128,0.2579315901,0.7420684099,72,BAB III,C. Diabetes Melitus Tipe-1,aspek psikososial|peran tim kesehatan diabetes anak|edukasi diabetes dm tipe-1,1,0
+Q23,metadata,3,B-0020,0.1831626892,0.8168373108,21,BAB III,C. Diabetes Melitus Tipe-1,pemantauan hba1c|peran tim kesehatan diabetes anak,1,0
+Q23,metadata,4,B-0022,0.1528398395,0.8471601605,22,BAB III,C. Diabetes Melitus Tipe-1,peran tim kesehatan diabetes anak|edukasi diabetes dm tipe-1,1,0
+Q23,metadata,5,B-0204,0.1273622513,0.8726377487,109,BAB III,E. Pengelolaan Pada Masa Transisi,masa transisi|peran tim kesehatan diabetes anak,1,0
+Q24,baseline,1,A-0184,0.5350705981,0.4649294019,,,,,0,0
+Q24,baseline,2,A-0183,0.4913232327,0.5086767673,,,,,0,0
+Q24,baseline,3,A-0069,0.4839059114,0.5160940886,,,,,0,0
+Q24,baseline,4,A-0070,0.4105609655,0.5894390345,,,,,0,0
+Q24,baseline,5,A-0186,0.3998097181,0.6001902819,,,,,0,0
+Q24,metadata,1,B-0069,0.4839059114,0.5160940886,45,BAB III,C. Diabetes Melitus Tipe-1,aktivitas fisik dm tipe-1|hipoglikemia|komplikasi akut kad,1,0
+Q24,metadata,2,B-0070,0.4105609655,0.5894390345,45,BAB III,C. Diabetes Melitus Tipe-1,aktivitas fisik dm tipe-1|penyesuaian insulin|hipoglikemia,1,0
+Q24,metadata,3,B-0073,0.2753301859,0.7246698141,47,BAB III,C. Diabetes Melitus Tipe-1,aktivitas fisik dm tipe-1|penyesuaian insulin|pemantauan glukosa,1,0
+Q24,metadata,4,B-0019,0.2280433178,0.7719566822,21,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|hipoglikemia|pemantauan hba1c,1,0
+Q24,metadata,5,B-0130,0.2272700071,0.7727299929,73,BAB III,C. Diabetes Melitus Tipe-1,komplikasi akut kad|komplikasi kronik dm tipe-1,1,0
+Q25,baseline,1,A-0070,0.5663299561,0.4336700439,,,,,0,0
+Q25,baseline,2,A-0073,0.5463292301,0.4536707699,,,,,0,0
+Q25,baseline,3,A-0069,0.3887554407,0.6112445593,,,,,0,0
+Q25,baseline,4,A-0117,0.3875248432,0.6124751568,,,,,0,0
+Q25,baseline,5,A-0207,0.3746320009,0.6253679991,,,,,0,0
+Q25,metadata,1,B-0070,0.5663299561,0.4336700439,45,BAB III,C. Diabetes Melitus Tipe-1,aktivitas fisik dm tipe-1|penyesuaian insulin|hipoglikemia,1,0
+Q25,metadata,2,B-0073,0.5463292301,0.4536707699,47,BAB III,C. Diabetes Melitus Tipe-1,aktivitas fisik dm tipe-1|penyesuaian insulin|pemantauan glukosa,1,0
+Q25,metadata,3,B-0069,0.3887554407,0.6112445593,45,BAB III,C. Diabetes Melitus Tipe-1,aktivitas fisik dm tipe-1|hipoglikemia|komplikasi akut kad,1,0
+Q25,metadata,4,B-0117,0.3875248432,0.6124751568,67,BAB III,C. Diabetes Melitus Tipe-1,manajemen di sekolah|hipoglikemia|edukasi diabetes dm tipe-1,1,0
+Q25,metadata,5,B-0019,0.3619619608,0.6380380392,21,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|hipoglikemia|pemantauan hba1c,1,0
+Q26,baseline,1,A-0080,0.4939567447,0.5060432553,,,,,0,0
+Q26,baseline,2,A-0079,0.4292203784,0.5707796216,,,,,0,0
+Q26,baseline,3,A-0010,0.2751246095,0.7248753905,,,,,0,0
+Q26,baseline,4,A-0089,0.2452387214,0.7547612786,,,,,0,0
+Q26,baseline,5,A-0090,0.2443104982,0.7556895018,,,,,0,0
+Q26,metadata,1,B-0080,0.4939567447,0.5060432553,50,BAB III,C. Diabetes Melitus Tipe-1,pemeriksaan keton,1,0
+Q26,metadata,2,B-0079,0.4292203784,0.5707796216,50,BAB III,C. Diabetes Melitus Tipe-1,pemantauan glukosa|pemeriksaan keton|tata laksana saat sakit,1,0
+Q26,metadata,3,B-0089,0.2452387214,0.7547612786,55,BAB III,C. Diabetes Melitus Tipe-1,pemeriksaan keton|tata laksana saat sakit|komplikasi akut kad,1,0
+Q26,metadata,4,B-0090,0.2443104982,0.7556895018,55,BAB III,C. Diabetes Melitus Tipe-1,tata laksana saat sakit|pemeriksaan keton|komplikasi akut kad,1,0
+Q26,metadata,5,B-0211,0.2144894004,0.7855105996,113,BAB IV,A. Diabetes Melitus Tipe-1,pemantauan glukosa|pemeriksaan keton|komplikasi akut kad,1,0
+Q27,baseline,1,A-0085,0.4226677418,0.5773322582,,,,,0,0
+Q27,baseline,2,A-0092,0.3044973612,0.6955026388,,,,,0,0
+Q27,baseline,3,A-0117,0.3042917252,0.6957082748,,,,,0,0
+Q27,baseline,4,A-0084,0.3012297153,0.6987702847,,,,,0,0
+Q27,baseline,5,A-0120,0.2951799631,0.7048200369,,,,,0,0
+Q27,metadata,1,B-0085,0.4226677418,0.5773322582,53,BAB III,C. Diabetes Melitus Tipe-1,tata laksana saat sakit|penyesuaian insulin|pemeriksaan keton,1,0
+Q27,metadata,2,B-0117,0.3042917252,0.6957082748,67,BAB III,C. Diabetes Melitus Tipe-1,manajemen di sekolah|hipoglikemia|edukasi diabetes dm tipe-1,1,0
+Q27,metadata,3,B-0084,0.3012297153,0.6987702847,52,BAB III,C. Diabetes Melitus Tipe-1,tata laksana saat sakit|komplikasi akut kad|pemeriksaan keton,1,0
+Q27,metadata,4,B-0122,0.2884380817,0.7115619183,69,BAB III,C. Diabetes Melitus Tipe-1,manajemen saat perjalanan|edukasi diabetes dm tipe-1|penyesuaian insulin,1,0
+Q27,metadata,5,B-0128,0.2839769125,0.7160230875,72,BAB III,C. Diabetes Melitus Tipe-1,aspek psikososial|peran tim kesehatan diabetes anak|edukasi diabetes dm tipe-1,1,0
+Q28,baseline,1,A-0092,0.3950565457,0.6049434543,,,,,0,0
+Q28,baseline,2,A-0094,0.2624179125,0.7375820875,,,,,0,0
+Q28,baseline,3,A-0093,0.2371243238,0.7628756762,,,,,0,0
+Q28,baseline,4,A-0098,0.2159565687,0.7840434313,,,,,0,0
+Q28,baseline,5,A-0129,0.1864327788,0.8135672212,,,,,0,0
+Q28,metadata,1,B-0092,0.3950565457,0.6049434543,56,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan operasi|hipoglikemia|komplikasi akut kad,1,0
+Q28,metadata,2,B-0094,0.2624179125,0.7375820875,57,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan operasi|pemantauan glukosa|terapi insulin,1,0
+Q28,metadata,3,B-0093,0.2371243238,0.7628756762,56,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan operasi|komplikasi akut kad,1,0
+Q28,metadata,4,B-0098,0.2159565687,0.7840434313,59,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan operasi|penyesuaian insulin|pemantauan glukosa,1,0
+Q28,metadata,5,B-0129,0.1864327788,0.8135672212,73,BAB III,C. Diabetes Melitus Tipe-1,aspek psikososial|pengelolaan dm tipe-1,1,0
+Q29,baseline,1,A-0111,0.5038778186,0.4961221814,,,,,0,0
+Q29,baseline,2,A-0113,0.4922258258,0.5077741742,,,,,0,0
+Q29,baseline,3,A-0112,0.4741709232,0.5258290768,,,,,0,0
+Q29,baseline,4,A-0021,0.4528458714,0.5471541286,,,,,0,0
+Q29,baseline,5,A-0116,0.3700197935,0.6299802065,,,,,0,0
+Q29,metadata,1,B-0111,0.5038778186,0.4961221814,64,BAB III,C. Diabetes Melitus Tipe-1,edukasi diabetes dm tipe-1|aspek psikososial,1,0
+Q29,metadata,2,B-0113,0.4922258258,0.5077741742,65,BAB III,C. Diabetes Melitus Tipe-1,edukasi diabetes dm tipe-1|manajemen di sekolah|tata laksana saat sakit,1,0
+Q29,metadata,3,B-0112,0.4741709232,0.5258290768,65,BAB III,C. Diabetes Melitus Tipe-1,edukasi diabetes dm tipe-1|peran tim kesehatan diabetes anak|aspek psikososial,1,0
+Q29,metadata,4,B-0021,0.4528458714,0.5471541286,22,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|edukasi diabetes dm tipe-1|manajemen di sekolah,1,0
+Q29,metadata,5,B-0116,0.3700197935,0.6299802065,66,BAB III,C. Diabetes Melitus Tipe-1,manajemen di sekolah|edukasi diabetes dm tipe-1|aspek psikososial,1,0
+Q30,baseline,1,A-0221,0.4985791445,0.5014208555,,,,,0,0
+Q30,baseline,2,A-0177,0.3721801043,0.6278198957,,,,,0,0
+Q30,baseline,3,A-0013,0.3416947126,0.6583052874,,,,,0,0
+Q30,baseline,4,A-0130,0.3296484351,0.6703515649,,,,,0,0
+Q30,baseline,5,A-0173,0.3274370432,0.6725629568,,,,,0,0
+Q30,metadata,1,B-0221,0.4986622334,0.5013377666,117,BAB IV,G. Diabetes Melitus Tipe-2,komplikasi dm tipe-2|rekomendasi dm tipe-2,1,0
+Q30,metadata,2,B-0193,0.2956312299,0.7043687701,104,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2|monitoring dm tipe-2,1,0
+Q30,metadata,3,B-0220,0.2939345837,0.7060654163,117,BAB IV,G. Diabetes Melitus Tipe-2,monitoring dm tipe-2|komplikasi dm tipe-2|terapi medikamentosa dm tipe-2,1,0
+Q30,metadata,4,B-0222,0.2898263931,0.7101736069,118,BAB IV,G. Diabetes Melitus Tipe-2,komplikasi dm tipe-2,1,0
+Q30,metadata,5,B-0194,0.2860522866,0.7139477134,104,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2,1,0
+Q31,baseline,1,A-0003,0.519346863,0.480653137,,,,,0,0
+Q31,baseline,2,A-0001,0.4145575762,0.5854424238,,,,,0,0
+Q31,baseline,3,A-0002,0.4026402235,0.5973597765,,,,,0,0
+Q31,baseline,4,A-0177,0.3875552416,0.6124447584,,,,,0,0
+Q31,baseline,5,A-0178,0.3101710677,0.6898289323,,,,,0,0
+Q31,metadata,1,B-0003,0.519346863,0.480653137,14,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|diagnosis dm tipe-1,1,0
+Q31,metadata,2,B-0001,0.4145575762,0.5854424238,13,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|definisi diabetes|pemeriksaan c-peptida,1,0
+Q31,metadata,3,B-0002,0.4026402235,0.5973597765,13,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|pemeriksaan c-peptida,1,0
+Q31,metadata,4,B-0177,0.3875552416,0.6124447584,96,BAB III,D. Diabetes Melitus Tipe-2,diagnosis dm tipe-2|skrining komorbiditas dm tipe-1,1,0
+Q31,metadata,5,B-0004,0.2910004854,0.7089995146,14,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|diagnosis dm tipe-1|pemeriksaan c-peptida,1,0
+Q32,baseline,1,A-0002,0.4554980993,0.5445019007,,,,,0,0
+Q32,baseline,2,A-0011,0.3689728379,0.6310271621,,,,,0,0
+Q32,baseline,3,A-0005,0.3297810555,0.6702189445,,,,,0,0
+Q32,baseline,4,A-0010,0.303437233,0.696562767,,,,,0,0
+Q32,baseline,5,A-0006,0.2620218396,0.7379781604,,,,,0,0
+Q32,metadata,1,B-0002,0.4554980993,0.5445019007,13,BAB III,A. Definisi dan Klasifikasi,klasifikasi diabetes|pemeriksaan c-peptida,1,0
+Q32,metadata,2,B-0011,0.3689728379,0.6310271621,17,BAB III,C. Diabetes Melitus Tipe-1,diagnosis dm tipe-1|pemeriksaan c-peptida,1,0
+Q32,metadata,3,B-0005,0.3297810555,0.6702189445,15,BAB III,A. Definisi dan Klasifikasi,diagnosis dm tipe-1|pemeriksaan c-peptida,1,0
+Q32,metadata,4,B-0010,0.303437233,0.696562767,17,BAB III,C. Diabetes Melitus Tipe-1,pemeriksaan c-peptida|pemeriksaan insulin|diagnosis umum diabetes,1,0
+Q32,metadata,5,B-0006,0.2620218396,0.7379781604,15,BAB III,A. Definisi dan Klasifikasi,diagnosis dm tipe-1|klasifikasi diabetes,1,0
+Q33,baseline,1,A-0222,0.4684454203,0.5315545797,,,,,0,0
+Q33,baseline,2,A-0221,0.4501245022,0.5498754978,,,,,0,0
+Q33,baseline,3,A-0193,0.4312607646,0.5687392354,,,,,0,0
+Q33,baseline,4,A-0013,0.4092185497,0.5907814503,,,,,0,0
+Q33,baseline,5,A-0192,0.3501367569,0.6498632431,,,,,0,0
+Q33,metadata,1,B-0013,0.4092185497,0.5907814503,18,BAB III,C. Diabetes Melitus Tipe-1,skrining komorbiditas dm tipe-1|skrining komplikasi dm tipe-1,1,0
+Q33,metadata,2,B-0173,0.3212146759,0.6787853241,94,BAB III,C. Diabetes Melitus Tipe-1,komplikasi kronik dm tipe-1|skrining komplikasi dm tipe-1,1,0
+Q33,metadata,3,B-0177,0.2533499002,0.7466500998,96,BAB III,D. Diabetes Melitus Tipe-2,diagnosis dm tipe-2|skrining komorbiditas dm tipe-1,1,0
+Q33,metadata,4,B-0167,0.2214649916,0.7785350084,91,BAB III,C. Diabetes Melitus Tipe-1,skrining komplikasi dm tipe-1|komplikasi kronik dm tipe-1,1,0
+Q33,metadata,5,B-0174,0.1690850854,0.8309149146,94,BAB III,C. Diabetes Melitus Tipe-1,skrining komplikasi dm tipe-1|komplikasi kronik dm tipe-1,1,0
+Q34,baseline,1,A-0019,0.438853085,0.561146915,,,,,0,0
+Q34,baseline,2,A-0043,0.4331719875,0.5668280125,,,,,0,0
+Q34,baseline,3,A-0041,0.4073907137,0.5926092863,,,,,0,0
+Q34,baseline,4,A-0057,0.402361393,0.597638607,,,,,0,0
+Q34,baseline,5,A-0067,0.4016312957,0.5983687043,,,,,0,0
+Q34,metadata,1,B-0019,0.438853085,0.561146915,21,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|hipoglikemia|pemantauan hba1c,1,0
+Q34,metadata,2,B-0041,0.4073907137,0.5926092863,32,BAB III,C. Diabetes Melitus Tipe-1,regimen insulin|penyesuaian insulin|terapi insulin,1,0
+Q34,metadata,3,B-0206,0.3993895054,0.6006104946,111,BAB IV,A. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|rekomendasi dm tipe-1|terapi insulin,1,0
+Q34,metadata,4,B-0030,0.3844127655,0.6155872345,26,BAB III,C. Diabetes Melitus Tipe-1,jenis insulin|terapi insulin|regimen insulin,1,0
+Q34,metadata,5,B-0042,0.3827972412,0.6172027588,32,BAB III,C. Diabetes Melitus Tipe-1,regimen insulin|terapi insulin|pemantauan hba1c,1,0
+Q35,baseline,1,A-0049,0.4798595309,0.5201404691,,,,,0,0
+Q35,baseline,2,A-0109,0.3564935923,0.6435064077,,,,,0,0
+Q35,baseline,3,A-0067,0.3088264465,0.6911735535,,,,,0,0
+Q35,baseline,4,A-0066,0.2861357927,0.7138642073,,,,,0,0
+Q35,baseline,5,A-0108,0.2724548578,0.7275451422,,,,,0,0
+Q35,metadata,1,B-0049,0.4798595309,0.5201404691,36,BAB III,C. Diabetes Melitus Tipe-1,penyesuaian insulin|puasa ramadhan|pemantauan glukosa,1,0
+Q35,metadata,2,B-0109,0.3564935923,0.6435064077,63,BAB III,C. Diabetes Melitus Tipe-1,puasa ramadhan|regimen insulin|penyesuaian insulin,1,0
+Q35,metadata,3,B-0067,0.3088264465,0.6911735535,44,BAB III,C. Diabetes Melitus Tipe-1,pengaturan makan dm tipe-1|regimen insulin,1,0
+Q35,metadata,4,B-0066,0.2861357927,0.7138642073,43,BAB III,C. Diabetes Melitus Tipe-1,pengaturan makan dm tipe-1|regimen insulin,1,0
+Q35,metadata,5,B-0108,0.2724548578,0.7275451422,63,BAB III,C. Diabetes Melitus Tipe-1,puasa ramadhan|penyesuaian insulin|pemeriksaan keton,1,0
+Q36,baseline,1,A-0070,0.4266216755,0.5733783245,,,,,0,0
+Q36,baseline,2,A-0073,0.3401846886,0.6598153114,,,,,0,0
+Q36,baseline,3,A-0177,0.3300709724,0.6699290276,,,,,0,0
+Q36,baseline,4,A-0069,0.3150651455,0.6849348545,,,,,0,0
+Q36,baseline,5,A-0221,0.3076719046,0.6923280954,,,,,0,0
+Q36,metadata,1,B-0070,0.4266216755,0.5733783245,45,BAB III,C. Diabetes Melitus Tipe-1,aktivitas fisik dm tipe-1|penyesuaian insulin|hipoglikemia,1,0
+Q36,metadata,2,B-0073,0.3401846886,0.6598153114,47,BAB III,C. Diabetes Melitus Tipe-1,aktivitas fisik dm tipe-1|penyesuaian insulin|pemantauan glukosa,1,0
+Q36,metadata,3,B-0069,0.3150651455,0.6849348545,45,BAB III,C. Diabetes Melitus Tipe-1,aktivitas fisik dm tipe-1|hipoglikemia|komplikasi akut kad,1,0
+Q36,metadata,4,B-0114,0.2268943787,0.7731056213,65,BAB III,C. Diabetes Melitus Tipe-1,edukasi diabetes dm tipe-1|aspek psikososial|aktivitas fisik dm tipe-1,1,0
+Q36,metadata,5,B-0075,0.1484326124,0.8515673876,48,BAB III,C. Diabetes Melitus Tipe-1,aktivitas fisik dm tipe-1|pemantauan glukosa|penyesuaian insulin,1,0
+Q37,baseline,1,A-0042,0.3865309954,0.6134690046,,,,,0,0
+Q37,baseline,2,A-0043,0.36807096,0.63192904,,,,,0,0
+Q37,baseline,3,A-0019,0.3663253188,0.6336746812,,,,,0,0
+Q37,baseline,4,A-0057,0.362113595,0.637886405,,,,,0,0
+Q37,baseline,5,A-0021,0.3420746922,0.6579253078,,,,,0,0
+Q37,metadata,1,B-0042,0.3865309954,0.6134690046,32,BAB III,C. Diabetes Melitus Tipe-1,regimen insulin|terapi insulin|pemantauan hba1c,1,0
+Q37,metadata,2,B-0095,0.3186604977,0.6813395023,57,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan operasi|penyesuaian insulin|pemantauan glukosa,1,0
+Q37,metadata,3,B-0041,0.3166478872,0.6833521128,32,BAB III,C. Diabetes Melitus Tipe-1,regimen insulin|penyesuaian insulin|terapi insulin,1,0
+Q37,metadata,4,B-0206,0.3103592396,0.6896407604,111,BAB IV,A. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|rekomendasi dm tipe-1|terapi insulin,1,0
+Q37,metadata,5,B-0096,0.310295701,0.689704299,58,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan operasi|penyesuaian insulin|pemantauan glukosa,1,0
+Q38,baseline,1,A-0105,0.4213511348,0.5786488652,,,,,0,0
+Q38,baseline,2,A-0102,0.3625662327,0.6374337673,,,,,0,0
+Q38,baseline,3,A-0101,0.3544957638,0.6455042362,,,,,0,0
+Q38,baseline,4,A-0104,0.3363075256,0.6636924744,,,,,0,0
+Q38,baseline,5,A-0070,0.2114049196,0.7885950804,,,,,0,0
+Q38,metadata,1,B-0105,0.4213511348,0.5786488652,61,BAB III,C. Diabetes Melitus Tipe-1,puasa ramadhan|edukasi diabetes dm tipe-1|pemantauan glukosa,1,0
+Q38,metadata,2,B-0102,0.3625662327,0.6374337673,60,BAB III,C. Diabetes Melitus Tipe-1,puasa ramadhan|edukasi diabetes dm tipe-1,1,0
+Q38,metadata,3,B-0101,0.3544957638,0.6455042362,60,BAB III,C. Diabetes Melitus Tipe-1,puasa ramadhan|pengelolaan dm tipe-1|komplikasi akut kad,1,0
+Q38,metadata,4,B-0104,0.3363075256,0.6636924744,61,BAB III,C. Diabetes Melitus Tipe-1,puasa ramadhan|hipoglikemia|komplikasi akut kad,1,0
+Q38,metadata,5,B-0103,0.1867755055,0.8132244945,60,BAB III,C. Diabetes Melitus Tipe-1,puasa ramadhan|edukasi diabetes dm tipe-1,1,0
+Q39,baseline,1,A-0013,0.4168909788,0.5831090212,,,,,0,0
+Q39,baseline,2,A-0221,0.40368855,0.59631145,,,,,0,0
+Q39,baseline,3,A-0194,0.3627016544,0.6372983456,,,,,0,0
+Q39,baseline,4,A-0195,0.3139454126,0.6860545874,,,,,0,0
+Q39,baseline,5,A-0005,0.2900441885,0.7099558115,,,,,0,0
+Q39,metadata,1,B-0013,0.4168909788,0.5831090212,18,BAB III,C. Diabetes Melitus Tipe-1,skrining komorbiditas dm tipe-1|skrining komplikasi dm tipe-1,1,0
+Q39,metadata,2,B-0173,0.2791386843,0.7208613157,94,BAB III,C. Diabetes Melitus Tipe-1,komplikasi kronik dm tipe-1|skrining komplikasi dm tipe-1,1,0
+Q39,metadata,3,B-0167,0.2714760303,0.7285239697,91,BAB III,C. Diabetes Melitus Tipe-1,skrining komplikasi dm tipe-1|komplikasi kronik dm tipe-1,1,0
+Q39,metadata,4,B-0169,0.2530319691,0.7469680309,92,BAB III,C. Diabetes Melitus Tipe-1,komplikasi kronik dm tipe-1|skrining komplikasi dm tipe-1,1,0
+Q39,metadata,5,B-0168,0.2484306097,0.7515693903,91,BAB III,C. Diabetes Melitus Tipe-1,skrining komplikasi dm tipe-1|komplikasi kronik dm tipe-1,1,0
+Q40,baseline,1,A-0175,0.3528069258,0.6471930742,,,,,0,0
+Q40,baseline,2,A-0207,0.3374429941,0.6625570059,,,,,0,0
+Q40,baseline,3,A-0076,0.3045668602,0.6954331398,,,,,0,0
+Q40,baseline,4,A-0046,0.2954815626,0.7045184374,,,,,0,0
+Q40,baseline,5,A-0221,0.2638462782,0.7361537218,,,,,0,0
+Q40,metadata,1,B-0175,0.3528069258,0.6471930742,95,BAB III,C. Diabetes Melitus Tipe-1,pertumbuhan dm tipe-1|skrining komorbiditas dm tipe-1,1,0
+Q40,metadata,2,B-0176,0.2543797493,0.7456202507,95,BAB III,C. Diabetes Melitus Tipe-1,pertumbuhan dm tipe-1|penyakit penyerta dm tipe-1|pengelolaan dm tipe-1,1,0
+Q40,metadata,3,B-0019,0.2219105363,0.7780894637,21,BAB III,C. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|hipoglikemia|pemantauan hba1c,1,0
+Q40,metadata,4,B-0206,0.1904333234,0.8095666766,111,BAB IV,A. Diabetes Melitus Tipe-1,pengelolaan dm tipe-1|rekomendasi dm tipe-1|terapi insulin,1,0
+Q40,metadata,5,B-0129,0.1756014824,0.8243985176,73,BAB III,C. Diabetes Melitus Tipe-1,aspek psikososial|pengelolaan dm tipe-1,1,0
+Q41,baseline,1,A-0112,0.4167170525,0.5832829475,,,,,0,0
+Q41,baseline,2,A-0113,0.4081376195,0.5918623805,,,,,0,0
+Q41,baseline,3,A-0021,0.4068301916,0.5931698084,,,,,0,0
+Q41,baseline,4,A-0182,0.3892320991,0.6107679009,,,,,0,0
+Q41,baseline,5,A-0116,0.3381552696,0.6618447304,,,,,0,0
+Q41,metadata,1,B-0182,0.3892320991,0.6107679009,98,BAB III,D. Diabetes Melitus Tipe-2,pengaturan makan dm tipe-2|edukasi dm tipe-2,1,0
+Q41,metadata,2,B-0187,0.2715613842,0.7284386158,101,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|gaya hidup dm tipe-2,1,0
+Q41,metadata,3,B-0219,0.2296179533,0.7703820467,116,BAB IV,G. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|pengaturan makan dm tipe-2|aktivitas fisik dm tipe-2,1,0
+Q41,metadata,4,B-0179,0.2272575498,0.7727424502,97,BAB III,D. Diabetes Melitus Tipe-2,edukasi dm tipe-2|gaya hidup dm tipe-2|pengaturan makan dm tipe-2,1,0
+Q41,metadata,5,B-0186,0.2081454396,0.7918545604,100,BAB III,D. Diabetes Melitus Tipe-2,aktivitas fisik dm tipe-2|gaya hidup dm tipe-2,1,0
+Q42,baseline,1,A-0182,0.2985450625,0.7014549375,,,,,0,0
+Q42,baseline,2,A-0059,0.2282289267,0.7717710733,,,,,0,0
+Q42,baseline,3,A-0181,0.1898617744,0.8101382256,,,,,0,0
+Q42,baseline,4,A-0180,0.1723659635,0.8276340365,,,,,0,0
+Q42,baseline,5,A-0021,0.1700578928,0.8299421072,,,,,0,0
+Q42,metadata,1,B-0182,0.2985450625,0.7014549375,98,BAB III,D. Diabetes Melitus Tipe-2,pengaturan makan dm tipe-2|edukasi dm tipe-2,1,0
+Q42,metadata,2,B-0181,0.1898617744,0.8101382256,98,BAB III,D. Diabetes Melitus Tipe-2,pengaturan makan dm tipe-2|edukasi dm tipe-2,1,0
+Q42,metadata,3,B-0180,0.1723659635,0.8276340365,97,BAB III,D. Diabetes Melitus Tipe-2,gaya hidup dm tipe-2|pengaturan makan dm tipe-2|edukasi dm tipe-2,1,0
+Q42,metadata,4,B-0187,0.1449082494,0.8550917506,101,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|gaya hidup dm tipe-2,1,0
+Q42,metadata,5,B-0183,0.1349713802,0.8650286198,99,BAB III,D. Diabetes Melitus Tipe-2,aktivitas fisik dm tipe-2|pengaturan makan dm tipe-2,1,0
+Q43,baseline,1,A-0184,0.5496659577,0.4503340423,,,,,0,0
+Q43,baseline,2,A-0183,0.5076890588,0.4923109412,,,,,0,0
+Q43,baseline,3,A-0186,0.3326742649,0.6673257351,,,,,0,0
+Q43,baseline,4,A-0069,0.308275342,0.691724658,,,,,0,0
+Q43,baseline,5,A-0182,0.2758347988,0.7241652012,,,,,0,0
+Q43,metadata,1,B-0184,0.5496659577,0.4503340423,99,BAB III,D. Diabetes Melitus Tipe-2,aktivitas fisik dm tipe-2|gaya hidup dm tipe-2,1,0
+Q43,metadata,2,B-0183,0.5076890588,0.4923109412,99,BAB III,D. Diabetes Melitus Tipe-2,aktivitas fisik dm tipe-2|pengaturan makan dm tipe-2,1,0
+Q43,metadata,3,B-0186,0.3326742649,0.6673257351,100,BAB III,D. Diabetes Melitus Tipe-2,aktivitas fisik dm tipe-2|gaya hidup dm tipe-2,1,0
+Q43,metadata,4,B-0180,0.1528395414,0.8471604586,97,BAB III,D. Diabetes Melitus Tipe-2,gaya hidup dm tipe-2|pengaturan makan dm tipe-2|edukasi dm tipe-2,1,0
+Q43,metadata,5,B-0187,0.1478348374,0.8521651626,101,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|gaya hidup dm tipe-2,1,0
+Q44,baseline,1,A-0184,0.4724037051,0.5275962949,,,,,0,0
+Q44,baseline,2,A-0183,0.4145127535,0.5854872465,,,,,0,0
+Q44,baseline,3,A-0186,0.3496623039,0.6503376961,,,,,0,0
+Q44,baseline,4,A-0069,0.2001879811,0.7998120189,,,,,0,0
+Q44,baseline,5,A-0182,0.1680479646,0.8319520354,,,,,0,0
+Q44,metadata,1,B-0184,0.4724037051,0.5275962949,99,BAB III,D. Diabetes Melitus Tipe-2,aktivitas fisik dm tipe-2|gaya hidup dm tipe-2,1,0
+Q44,metadata,2,B-0183,0.4145127535,0.5854872465,99,BAB III,D. Diabetes Melitus Tipe-2,aktivitas fisik dm tipe-2|pengaturan makan dm tipe-2,1,0
+Q44,metadata,3,B-0186,0.3496623039,0.6503376961,100,BAB III,D. Diabetes Melitus Tipe-2,aktivitas fisik dm tipe-2|gaya hidup dm tipe-2,1,0
+Q44,metadata,4,B-0179,0.1180285811,0.8819714189,97,BAB III,D. Diabetes Melitus Tipe-2,edukasi dm tipe-2|gaya hidup dm tipe-2|pengaturan makan dm tipe-2,1,0
+Q44,metadata,5,B-0180,0.0955191851,0.9044808149,97,BAB III,D. Diabetes Melitus Tipe-2,gaya hidup dm tipe-2|pengaturan makan dm tipe-2|edukasi dm tipe-2,1,0
+Q45,baseline,1,A-0219,0.5575802922,0.4424197078,,,,,0,0
+Q45,baseline,2,A-0187,0.5307241678,0.4692758322,,,,,0,0
+Q45,baseline,3,A-0189,0.4215404391,0.5784595609,,,,,0,0
+Q45,baseline,4,A-0190,0.3635289669,0.6364710331,,,,,0,0
+Q45,baseline,5,A-0220,0.3408814669,0.6591185331,,,,,0,0
+Q45,metadata,1,B-0219,0.5575802922,0.4424197078,116,BAB IV,G. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|pengaturan makan dm tipe-2|aktivitas fisik dm tipe-2,1,0
+Q45,metadata,2,B-0187,0.5307241678,0.4692758322,101,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|gaya hidup dm tipe-2,1,0
+Q45,metadata,3,B-0189,0.4215404391,0.5784595609,102,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|monitoring dm tipe-2,1,0
+Q45,metadata,4,B-0190,0.3635289669,0.6364710331,102,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|dosis insulin|pemantauan hba1c,1,0
+Q45,metadata,5,B-0220,0.3408814669,0.6591185331,117,BAB IV,G. Diabetes Melitus Tipe-2,monitoring dm tipe-2|komplikasi dm tipe-2|terapi medikamentosa dm tipe-2,1,0
+Q46,baseline,1,A-0189,0.469332695,0.530667305,,,,,0,0
+Q46,baseline,2,A-0187,0.4346146584,0.5653853416,,,,,0,0
+Q46,baseline,3,A-0192,0.4153223634,0.5846776366,,,,,0,0
+Q46,baseline,4,A-0191,0.367067039,0.632932961,,,,,0,0
+Q46,baseline,5,A-0220,0.3642933369,0.6357066631,,,,,0,0
+Q46,metadata,1,B-0189,0.469332695,0.530667305,102,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|monitoring dm tipe-2,1,0
+Q46,metadata,2,B-0187,0.4346146584,0.5653853416,101,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|gaya hidup dm tipe-2,1,0
+Q46,metadata,3,B-0192,0.4153223634,0.5846776366,103,BAB III,D. Diabetes Melitus Tipe-2,monitoring dm tipe-2|pemantauan hba1c|pemantauan glukosa,1,0
+Q46,metadata,4,B-0191,0.367067039,0.632932961,103,BAB III,D. Diabetes Melitus Tipe-2,monitoring dm tipe-2|terapi medikamentosa dm tipe-2|gaya hidup dm tipe-2,1,0
+Q46,metadata,5,B-0220,0.3642933369,0.6357066631,117,BAB IV,G. Diabetes Melitus Tipe-2,monitoring dm tipe-2|komplikasi dm tipe-2|terapi medikamentosa dm tipe-2,1,0
+Q47,baseline,1,A-0192,0.579305172,0.420694828,,,,,0,0
+Q47,baseline,2,A-0078,0.5058184862,0.4941815138,,,,,0,0
+Q47,baseline,3,A-0077,0.4350816607,0.5649183393,,,,,0,0
+Q47,baseline,4,A-0079,0.4162563086,0.5837436914,,,,,0,0
+Q47,baseline,5,A-0007,0.3931937218,0.6068062782,,,,,0,0
+Q47,metadata,1,B-0192,0.579305172,0.420694828,103,BAB III,D. Diabetes Melitus Tipe-2,monitoring dm tipe-2|pemantauan hba1c|pemantauan glukosa,1,0
+Q47,metadata,2,B-0193,0.3501031399,0.6498968601,104,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2|monitoring dm tipe-2,1,0
+Q47,metadata,3,B-0220,0.30344069,0.69655931,117,BAB IV,G. Diabetes Melitus Tipe-2,monitoring dm tipe-2|komplikasi dm tipe-2|terapi medikamentosa dm tipe-2,1,0
+Q47,metadata,4,B-0187,0.2449991703,0.7550008297,101,BAB III,D. Diabetes Melitus Tipe-2,terapi medikamentosa dm tipe-2|gaya hidup dm tipe-2,1,0
+Q47,metadata,5,B-0191,0.2251905203,0.7748094797,103,BAB III,D. Diabetes Melitus Tipe-2,monitoring dm tipe-2|terapi medikamentosa dm tipe-2|gaya hidup dm tipe-2,1,0
+Q48,baseline,1,A-0222,0.4757199287,0.5242800713,,,,,0,0
+Q48,baseline,2,A-0221,0.4378831387,0.5621168613,,,,,0,0
+Q48,baseline,3,A-0193,0.4127238393,0.5872761607,,,,,0,0
+Q48,baseline,4,A-0003,0.350938201,0.649061799,,,,,0,0
+Q48,baseline,5,A-0130,0.3466677666,0.6533322334,,,,,0,0
+Q48,metadata,1,B-0222,0.4758028984,0.5241971016,118,BAB IV,G. Diabetes Melitus Tipe-2,komplikasi dm tipe-2,1,0
+Q48,metadata,2,B-0221,0.4379193187,0.5620806813,117,BAB IV,G. Diabetes Melitus Tipe-2,komplikasi dm tipe-2|rekomendasi dm tipe-2,1,0
+Q48,metadata,3,B-0193,0.4128822088,0.5871177912,104,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2|monitoring dm tipe-2,1,0
+Q48,metadata,4,B-0194,0.343937397,0.656062603,104,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2,1,0
+Q48,metadata,5,B-0202,0.3137072325,0.6862927675,108,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2,1,0
+Q49,baseline,1,A-0221,0.285214901,0.714785099,,,,,0,0
+Q49,baseline,2,A-0214,0.2777355909,0.7222644091,,,,,0,0
+Q49,baseline,3,A-0196,0.2761899233,0.7238100767,,,,,0,0
+Q49,baseline,4,A-0195,0.2636297941,0.7363702059,,,,,0,0
+Q49,baseline,5,A-0213,0.24321419,0.75678581,,,,,0,0
+Q49,metadata,1,B-0221,0.285214901,0.714785099,117,BAB IV,G. Diabetes Melitus Tipe-2,komplikasi dm tipe-2|rekomendasi dm tipe-2,1,0
+Q49,metadata,2,B-0196,0.2761899233,0.7238100767,105,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2,1,0
+Q49,metadata,3,B-0195,0.2636297941,0.7363702059,105,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2|monitoring dm tipe-2,1,0
+Q49,metadata,4,B-0220,0.1871452332,0.8128547668,117,BAB IV,G. Diabetes Melitus Tipe-2,monitoring dm tipe-2|komplikasi dm tipe-2|terapi medikamentosa dm tipe-2,1,0
+Q49,metadata,5,B-0194,0.1790195704,0.8209804296,104,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2,1,0
+Q50,baseline,1,A-0222,0.5303193629,0.4696806371,,,,,0,0
+Q50,baseline,2,A-0193,0.35925138,0.64074862,,,,,0,0
+Q50,baseline,3,A-0192,0.3373610377,0.6626389623,,,,,0,0
+Q50,baseline,4,A-0194,0.2810792923,0.7189207077,,,,,0,0
+Q50,baseline,5,A-0196,0.2760896087,0.7239103913,,,,,0,0
+Q50,metadata,1,B-0222,0.5303193629,0.4696806371,118,BAB IV,G. Diabetes Melitus Tipe-2,komplikasi dm tipe-2,1,0
+Q50,metadata,2,B-0193,0.35925138,0.64074862,104,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2|monitoring dm tipe-2,1,0
+Q50,metadata,3,B-0194,0.2810792923,0.7189207077,104,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2,1,0
+Q50,metadata,4,B-0196,0.2760896087,0.7239103913,105,BAB III,D. Diabetes Melitus Tipe-2,komplikasi dm tipe-2,1,0
+Q50,metadata,5,B-0221,0.2210922241,0.7789077759,117,BAB IV,G. Diabetes Melitus Tipe-2,komplikasi dm tipe-2|rekomendasi dm tipe-2,1,0

@@ -1,0 +1,134 @@
+experiment:
+  name: "rag-metadata-comparison"
+  description: "Public-safe example configuration for comparing baseline and metadata RAG pipelines."
+
+models:
+  embedding: "text-embedding-3-small"
+  generation: "gpt-4o-mini"
+
+model_api:
+  provider: "openai_compatible"
+  base_url:
+  api_key:
+
+embedding:
+  batch_size: 64
+  timeout_seconds: 60
+  max_retries: 2
+  cache: "data/processed/embedding_cache.jsonl"
+
+data:
+  source_document: "data/raw/source.pdf"
+  source_document_name: "source document"
+  clinical_page_start: 1
+  clinical_page_end: 1
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  raw_pages: "data/raw/pages.jsonl"
+  clean_pages: "data/processed/clean_pages.jsonl"
+  clinical_corpus: "data/processed/clinical_corpus.jsonl"
+  chunks_baseline: "data/processed/chunks_baseline.jsonl"
+  chunks_metadata: "data/processed/chunks_metadata.jsonl"
+  embeddings_baseline: "data/processed/embeddings_baseline.jsonl"
+  embeddings_metadata: "data/processed/embeddings_metadata.jsonl"
+  metadata_review: "data/processed/metadata_review.csv"
+  evaluation_dataset: "data/evaluation/evaluation_dataset.csv"
+
+chunking:
+  strategy: "section-aware"
+  chunk_size_tokens: 350
+  chunk_overlap_tokens: 75
+  preserve_page_number: true
+  preserve_section_title: true
+
+metadata:
+  fields:
+    - source_document
+    - page
+    - chapter
+    - section
+    - labels
+  label_annotation:
+    method: "ai"
+    model: "gpt-4o-mini"
+    temperature: 0
+    max_retries: 2
+    timeout_seconds: 120
+    hard_timeout_seconds: 45
+    concurrency: 1
+    max_output_tokens: 256
+    fallback: "none"
+    max_labels_per_chunk: 3
+    cache: "data/processed/label_annotation_cache.jsonl"
+  label_vocabulary: []
+
+pipelines:
+  baseline:
+    description: "RAG without structured metadata."
+    index_fields:
+      - chunk_text
+      - embedding
+  with_metadata:
+    description: "RAG with metadata for source traceability."
+    index_fields:
+      - chunk_text
+      - embedding
+      - metadata
+
+retrieval:
+  top_k: 5
+  use_reranking: false
+  metadata_filter:
+    enabled: true
+    fallback_without_filter: true
+  smoke_questions: []
+
+generation:
+  answer_policy: "Answer only from the supplied context."
+  unsupported_answer: "The information is not sufficiently available in the supplied context."
+  supporting_quote_limit: 3
+  max_output_tokens: 768
+  timeout_seconds: 60
+  hard_timeout_seconds: 120
+  sleep_seconds_between_rows: 2
+
+evaluation:
+  llm_model: "gpt-4o-mini"
+  embedding_model: "text-embedding-3-small"
+  streaming: true
+  timeout_seconds: 60
+  max_retries: 0
+  max_workers: 1
+  max_incomplete_streak: 3
+  sleep_seconds_between_rows: 8
+  row_max_attempts: 3
+  retry_cooldown_seconds: 4
+  retry_buffer_seconds: 1
+  ragas_context_top_k: 5
+  ragas_metrics:
+    - context_relevance
+    - faithfulness
+    - answer_relevance
+  traceability_indicators:
+    - page_match
+    - chapter_match
+    - section_match
+    - label_match
+
+chroma:
+  persist_dir: "chroma"
+  baseline_collection: "rag_baseline"
+  metadata_collection: "rag_metadata"
+
+results:
+  extraction_report: "results/extraction/extraction_report.md"
+  smoke_test_outputs: "results/retrieval/smoke_test_outputs.jsonl"
+  retrieval_outputs: "results/retrieval/retrieval_outputs.jsonl"
+  answers: "results/generation/answers.jsonl"
+  ragas_scores: "results/ragas/ragas_scores.jsonl"
+  ragas_summary: "results/ragas/ragas_summary.csv"
+  traceability_scores: "results/traceability/traceability_scores.csv"
+  dataset_review: "results/evaluation/dataset_review.csv"
+  evaluation_summary: "results/qualitative/evaluation_summary.md"
+  failure_cases: "results/qualitative/failure_cases.md"
+  representative_cases: "results/qualitative/representative_cases.md"

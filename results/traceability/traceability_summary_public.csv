@@ -1,0 +1,3 @@
+pipeline,n,page_match_mean,page_match_matched_count,chapter_match_mean,chapter_match_matched_count,section_match_mean,section_match_matched_count,label_match_mean,label_match_matched_count,metadata_filter_used_count,metadata_filter_fallback_used_count
+baseline,50,0,0,0,0,0,0,0,0,0,0
+metadata,50,0.96,48,1,50,1,50,1,50,50,0
