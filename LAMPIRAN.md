@@ -38,6 +38,14 @@ Artefak publik hanya menampilkan bagian yang aman untuk audit, yaitu daftar pert
 
 Perhitungan pada lampiran ini mengikuti metode analisis yang dijelaskan pada Bab 3 dan digunakan untuk menyusun tabel hasil pada Bab 4. Setiap pertanyaan evaluasi dijalankan pada dua pipeline, yaitu baseline dan metadata. Dengan 50 pertanyaan evaluasi, terdapat 50 skor untuk setiap metrik pada masing-masing pipeline.
 
+Ringkasan numerik utama yang diturunkan dari artefak publik adalah sebagai berikut:
+
+```text
+jumlah pertanyaan evaluasi               = 50
+jumlah keluaran RAGAS                   = 100
+jumlah baris retrieval_contexts_public   = 488
+```
+
 Skor mentah RAGAS per pertanyaan disimpan dalam bentuk publik pada `results/ragas/ragas_scores_public.csv`. Kolom `context_relevance`, `faithfulness`, dan `answer_relevance` merupakan skor per `question_id` dan pipeline. Rata-rata skor untuk metrik `m` pada pipeline `p` dihitung sebagai berikut:
 
 ```text
@@ -91,6 +99,33 @@ N         = 50
 ```
 
 Pada baseline, indikator keterlacakan bernilai 0 karena pipeline baseline tidak menyimpan metadata halaman, bab, bagian, dan label. Nilai 0 tersebut berarti field metadata tidak tersedia untuk dihitung, bukan berarti semua konteks baseline pasti tidak relevan secara semantik.
+
+Ringkasan hasil terhitung dari artefak publik:
+
+```text
+context_relevance: baseline=0.9200, metadata=0.9800, delta=0.0600
+faithfulness:      baseline=0.8861, metadata=0.9662, delta=0.0800
+answer_relevance:  baseline=0.8354, metadata=0.8553, delta=0.0199
+```
+
+Distribusi per pertanyaan pada `results/ragas/ragas_delta_by_question.csv` juga sudah diringkas sebagai berikut:
+
+```text
+context_relevance: metadata_higher=5, equal=45, metadata_lower=0
+faithfulness:      metadata_higher=11, equal=38, metadata_lower=1
+answer_relevance:  metadata_higher=23, equal=4,  metadata_lower=23
+```
+
+Ringkasan keterlacakan sumber pada lima konteks teratas:
+
+```text
+page_match:    baseline=0/50, metadata=48/50
+chapter_match: baseline=0/50, metadata=50/50
+section_match: baseline=0/50, metadata=50/50
+label_match:   baseline=0/50, metadata=50/50
+```
+
+Pada metrik keterlacakan, metadata_filter_used muncul pada 50 dari 50 pertanyaan, sedangkan metadata_filter_fallback_used bernilai 0 dari 50 pertanyaan. Ini menunjukkan filter metadata aktif pada seluruh evaluasi dan tidak perlu fallback.
 
 ## Lampiran 4.1 Artefak Skor RAGAS dan Delta
 
