@@ -25,7 +25,9 @@ src/
 
 ## Batas Data Publik
 
-Yang disertakan hanya kode, template, daftar pertanyaan, skor numerik, metadata retrieval, dan ringkasan perhitungan.
+Yang disertakan adalah kode, template, daftar pertanyaan, skor numerik,
+metadata retrieval, ringkasan perhitungan, dan empat kasus representatif yang
+dibahas pada Bab 4.
 
 Yang tidak disertakan:
 
@@ -33,8 +35,12 @@ Yang tidak disertakan:
 - PDF sumber;
 - hasil ekstraksi teks;
 - chunk, embedding, dan ChromaDB;
-- jawaban acuan dan konteks acuan;
-- jawaban sistem dan teks konteks hasil retrieval.
+- file jawaban acuan lengkap dan konteks acuan lengkap;
+- file jawaban sistem lengkap dan teks konteks hasil retrieval.
+
+Empat contoh pertanyaan, jawaban acuan, jawaban baseline, dan jawaban metadata
+pada `LAMPIRAN.md` disertakan secara terbatas sebagai bukti kualitatif kasus
+representatif, bukan sebagai publikasi ulang korpus PNPK.
 
 ## Setup Singkat
 

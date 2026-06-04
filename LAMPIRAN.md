@@ -238,7 +238,172 @@ page_match, chapter_match, section_match, label_match
 
 Rata-rata pada `traceability_summary_public.csv` dihitung sebagai proporsi jumlah pertanyaan yang memiliki kecocokan metadata pada lima konteks teratas. Perhitungan ini mengikuti indikator keterlacakan sumber yang dijelaskan pada bagian "Dasar Perhitungan Skor".
 
-## Lampiran 4.3 Repositori Lampiran Publik
+## Lampiran 4.3 Detail Kasus Representatif Evaluasi RAG
+
+Bagian ini menampilkan pertanyaan, jawaban acuan, jawaban baseline, jawaban
+metadata, skor RAGAS, sumber konteks, dan interpretasi untuk empat kasus
+representatif yang dibahas pada Bab 4. Kasus ini digunakan untuk menjelaskan
+perilaku teknis sistem RAG, bukan sebagai validasi klinis atau rekomendasi
+medis.
+
+### Q26 - Berhasil
+
+**Pertanyaan:** Kapan anak dengan diabetes perlu melakukan pemeriksaan keton
+mandiri?
+
+**Jawaban acuan:** Pemeriksaan keton perlu tersedia dan dilakukan saat anak
+sakit disertai demam atau muntah, saat glukosa darah di atas 250 mg/dL pada
+anak yang tidak sehat atau meningkat persisten, saat poliuria persisten
+disertai peningkatan glukosa darah terutama dengan nyeri abdomen atau napas
+cepat, serta pada anak lebih muda atau pengguna pompa insulin bila diperlukan.
+
+**Jawaban baseline:** Anak dengan diabetes perlu memeriksa keton mandiri saat
+sakit disertai demam dan/atau muntah, saat glukosa darah >250 mg/dL pada anak
+yang tidak sehat atau meningkat >250 mg/dL secara persisten, serta saat
+poliuria persisten disertai peningkatan glukosa darah terutama bila ada nyeri
+abdomen atau napas cepat. Pemeriksaan keton darah sebaiknya tersedia pada anak
+yang lebih muda atau pengguna pompa insulin.
+
+**Jawaban metadata:** Anak dengan diabetes perlu melakukan pemeriksaan keton
+mandiri saat sakit yang disertai demam dan/atau muntah, saat glukosa darah di
+atas 250 mg/dL pada anak yang tidak sehat atau meningkat >250 mg/dL secara
+persisten, serta ketika ada poliuria persisten disertai peningkatan glukosa
+darah terutama bila disertai nyeri abdomen atau napas cepat. Pemeriksaan keton
+darah juga sebaiknya tersedia pada anak yang lebih muda atau yang menggunakan
+pompa insulin.
+
+| Pipeline | context relevance | faithfulness | answer relevance |
+| --- | ---: | ---: | ---: |
+| Baseline | 1.0000 | 1.0000 | 0.9581 |
+| Metadata | 1.0000 | 1.0000 | 1.0000 |
+
+**Sumber metadata:** halaman 50, BAB III, bagian C. Diabetes Melitus Tipe-1,
+label `tata laksana saat sakit`, `pemeriksaan keton`, dan `komplikasi akut kad`.
+
+**Interpretasi:** Kasus ini menunjukkan kondisi ketika retrieval, grounding
+terhadap konteks, dan jawaban metadata berjalan selaras. Interpretasi ini hanya
+digunakan untuk menilai perilaku teknis sistem RAG.
+
+### Q22 - Campuran
+
+**Pertanyaan:** Menjelang masa transisi layanan diabetes, apa saja yang perlu
+disiapkan?
+
+**Jawaban acuan:** PNPK menjelaskan masa transisi dapat dimulai pada usia 17
+hingga 20 tahun. Persiapan transisi mencakup kebijakan klinik transisi,
+pendidikan dan konseling tentang manajemen diri diabetes, kontrol dan
+komplikasi, perbedaan sistem pediatrik dan dewasa, navigasi layanan kesehatan,
+penilaian kesiapan, serta diskusi waktu transfer dengan pasien muda dan
+keluarga.
+
+**Jawaban baseline:** Menjelang masa transisi layanan diabetes, perlu
+disiapkan persiapan transisi dan edukasi, termasuk konseling tentang manajemen
+diri diabetes, kontrol dan komplikasi diabetes, perbedaan sistem pediatrik dan
+dewasa, serta navigasi perawatan kesehatan. Selain itu, perlu penilaian
+kesiapan, diskusi dengan pasien usia muda dan keluarga tentang waktu terbaik
+untuk transfer, identifikasi layanan orang dewasa, dokumentasi ringkasan
+diabetes klinis tertulis dan rencana transisi, serta komunikasi langsung dan
+serah terima antar tim perawatan.
+
+**Jawaban metadata:** Menjelang masa transisi layanan diabetes, yang perlu
+disiapkan adalah persiapan transisi dan pendidikan, termasuk konseling tentang
+manajemen diri diabetes, kontrol dan komplikasi diabetes, perbedaan antara
+sistem pediatrik dan dewasa, serta navigasi perawatan kesehatan. Selain itu
+perlu penilaian kesiapan oleh pediatrik, diskusi dengan pasien usia muda dan
+keluarga tentang waktu terbaik untuk transfer, identifikasi layanan orang
+dewasa yang mampu memenuhi kebutuhan, serta dokumentasi ringkasan diabetes
+klinis tertulis dan rencana transisi.
+
+| Pipeline | context relevance | faithfulness | answer relevance |
+| --- | ---: | ---: | ---: |
+| Baseline | 1.0000 | 1.0000 | 0.9561 |
+| Metadata | 1.0000 | 1.0000 | 0.9561 |
+
+**Sumber metadata:** halaman 109, BAB III, bagian E. Pengelolaan Pada Masa
+Transisi, label `masa transisi`, `edukasi diabetes dm tipe-1`, dan `aspek
+psikososial`.
+
+**Interpretasi:** Kasus ini tidak menunjukkan kegagalan jawaban. Skor kedua
+pipeline setara, sedangkan metadata tetap memberi nilai teknis karena sumber
+konteks dapat ditelusuri sampai halaman, bagian, dan label.
+
+### Q10 - Gagal pada Tabel dan Perbandingan
+
+**Pertanyaan:** Apa perbedaan cara kerja beberapa jenis insulin yang disebut di
+PNPK?
+
+**Jawaban acuan:** PNPK membedakan insulin berdasarkan awitan, puncak kerja,
+dan lama kerja. Contohnya, rapid-acting analog memiliki awitan sekitar 0,1
+sampai 0,2 jam, puncak 1 sampai 3 jam, dan lama kerja 3 sampai 5 jam; regular
+insulin memiliki awitan 0,5 sampai 1 jam, puncak 2 sampai 4 jam, dan lama kerja
+5 sampai 8 jam; NPH memiliki awitan 2 sampai 4 jam, puncak 4 sampai 12 jam, dan
+lama kerja 12 sampai 24 jam.
+
+**Jawaban baseline:** Perbedaan utamanya ada pada awitan kerja, puncak kerja,
+dan lama kerja. Insulin kerja cepat memiliki awitan paling cepat dan durasi
+paling singkat, insulin regular lebih lambat dan lebih lama, NPH lebih lambat
+lagi dengan puncak kerja yang lebih jelas, sedangkan insulin kerja panjang
+seperti glargine, detemir, dan degludec bekerja lebih lama dengan profil lebih
+basal dan glargine/detemir relatif tidak mempunyai kadar puncak.
+
+**Jawaban metadata:** Beberapa jenis insulin berbeda pada awitan kerja, puncak
+kerja, dan lama kerja. Insulin kerja cepat seperti aspart/glulisine/lispro mulai
+0,1-0,3 jam, puncak 1-3 jam, lama 3-5 jam; regular/kerja pendek mulai 0,5-1
+jam, puncak 2-4 jam, lama 5-8 jam; NPH kerja menengah mulai 2-4 jam, puncak
+4-12 jam, lama 12-24 jam; sedangkan glargine, detemir, dan degludec sebagai
+kerja panjang bekerja lebih lama dengan puncak minimal atau tidak ada.
+
+| Pipeline | context relevance | faithfulness | answer relevance |
+| --- | ---: | ---: | ---: |
+| Baseline | 1.0000 | 0.6923 | 0.7224 |
+| Metadata | 1.0000 | 0.9333 | 0.7096 |
+
+**Sumber metadata:** halaman 23, BAB III, bagian C. Diabetes Melitus Tipe-1,
+label `jenis insulin` dan `regimen insulin`.
+
+**Interpretasi:** Kasus ini menunjukkan bahwa konteks tabel atau perbandingan
+dapat berhasil diambil, tetapi jawaban akhir masih dapat menjadi terlalu umum
+atau tidak sepenuhnya sesuai dengan bentuk jawaban acuan. Masalah utama dibaca
+sebagai keterbatasan generasi jawaban, bukan kegagalan retrieval.
+
+### Q27 - Gagal pada Intensi Pertanyaan
+
+**Pertanyaan:** Kalau anak dengan diabetes sedang sakit, kenapa pengelolaannya
+perlu perhatian khusus?
+
+**Jawaban acuan:** Saat anak dengan diabetes sakit, perlu diwaspadai
+hiperglikemia dengan ketoasidosis atau hipoglikemia. PNPK menjelaskan bahwa
+hormon stres dapat meningkatkan glukoneogenesis dan resistensi insulin,
+sedangkan sakit berat dapat meningkatkan produksi keton, menyebabkan asidosis,
+mual, muntah, dehidrasi, dan gangguan keseimbangan asam basa.
+
+**Jawaban baseline:** Karena saat sakit kebutuhan insulin dapat meningkat,
+sementara produksi keton juga dapat bertambah sehingga memicu asidosis,
+dehidrasi, ketoasidosis, koma, dan kematian. Pada anak yang muntah atau diare,
+kadar glukosa darah juga bisa turun, sehingga pengelolaannya perlu lebih
+cermat.
+
+**Jawaban metadata:** Karena saat sakit kebutuhan insulin dan risiko gangguan
+metabolik dapat berubah, sehingga insulin tidak boleh dihentikan dan dosisnya
+mungkin perlu disesuaikan. Selain itu, perlu pemantauan glukosa darah dan keton
+lebih sering karena muntah bisa menandakan kekurangan insulin dan berisiko
+menuju dekompensasi metabolik.
+
+| Pipeline | context relevance | faithfulness | answer relevance |
+| --- | ---: | ---: | ---: |
+| Baseline | 1.0000 | 1.0000 | 0.8427 |
+| Metadata | 1.0000 | 1.0000 | 0.6100 |
+
+**Sumber metadata:** halaman 52, BAB III, bagian C. Diabetes Melitus Tipe-1,
+label `tata laksana saat sakit`, `pengelolaan dm tipe-1`, dan `edukasi diabetes
+dm tipe-1`.
+
+**Interpretasi:** Kasus ini menunjukkan bahwa jawaban dapat tetap didukung
+konteks, tetapi bergeser dari pertanyaan sebab-akibat menuju langkah
+pengelolaan. Karena itu, faithfulness tinggi tidak otomatis berarti jawaban
+paling sesuai dengan intensi pertanyaan.
+
+## Lampiran 4.4 Repositori Lampiran Publik
 
 Repositori lampiran publik berisi:
 
